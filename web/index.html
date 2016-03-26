@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+//先判断是否是ie，以及ie的版本
+var browser = {};
+(function() {
+    var userAgent = navigator.userAgent;
+    if (document.documentMode || /MSIE/.test(userAgent)) {
+        browser.ie = true;
+        if (document.documentMode) {
+            browser.ieVersion = document.documentMode;
+        } else {
+            browser.ieVersion = 7;
+        }
+        var htmlclass = "ie ie" + browser.ieVersion + " ";
+        if (browser.ieVersion <= 7) {
+            htmlclass += "ielte7 ";
+        }
+        if (browser.ieVersion <= 8) {
+            htmlclass += "ielte8 ";
+        }
+        if (browser.ieVersion <= 9) {
+            htmlclass += "ielte9 ";
+        }
+        if (browser.ieVersion <= 10) {
+            htmlclass += "ieltq10 ";
+        }
+        if (browser.ieVersion <= 11) {
+            htmlclass += "ielte11";
+        }
+    }else{
+        browser.ie = false;
+        var htmlclass = "ie0";
+        if(/firefox/i.test(navigator.userAgent)){
+            browser.firefox = true;
+        }
+    }
+    document.documentElement.className = htmlclass;
+}());
+</script>
+
+<head>
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="../public/common/json2.js"></script>
+    <script type="text/javascript" src="../public/common/cssfunc.js"></script>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>秀逗笑话网</title>
+    <script type="text/javascript" src="../public/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" data-main="load.js" src="../public/requirejs/require.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="../web-fe-common/style/dest/jingoal.css"> -->
+    <link rel="stylesheet" type="text/css" href="../static/dest/css/joke.css">
+</head>
+<body ng-controller="BodyController">
+   <div class="joke_header" ng-include="headerView"></div>
+   <div class="joke_body" ng-include="bodyView"></div>
+</body>
+
+</html>

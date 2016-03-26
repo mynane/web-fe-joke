@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>日试图-台历UI/UE重构</title>
+    <link rel="stylesheet" type="text/css" href="../web-fe-common/style/dest/jingoal.css">
+    <link rel="stylesheet" type="text/css" href="../static/dest/css/calendar.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+    <!-- 快捷操作 -->
+    <div class="shortcut">
+        <div class="shortcut-btn"><i class="icon-calendar-add"></i>新建申请</div>
+    </div>
+    <!-- 左侧菜单 -->
+    <div class="nav-panel">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <!-- 鼠标移入的样式还没有正式写呢 -->
+                <a class="nav-item-hd cur" href="#"><i class="icon-calendar-triangle-down"><b></b></i><i class="icon-calendar-calendar"></i><span>全部台历全部台历全部台历全部台历</span></a>
+                <ul class="nav-content" style="height:93px;">
+                    <!-- 每个li的高度为31px -->
+                    <li><a href="#"><span>培训台历</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的日程的日程的日程</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的台历的日程的日程</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的会议</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的日程</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的台历</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的会议</span></a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-hd" href="#"><i class="icon-calendar-triangle-down"></i><i class="icon-calendar-my"></i><span>我的台历</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-hd" href="#"><i class="icon-calendar-triangle-down"></i><i class="icon-calendar-calendar-manage"></i><span>台历管理</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-hd" href="#"><i class="icon-calendar-triangle-down"></i><i class="icon-calendar-setting"></i><span>功能设置</span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- 左侧日历索引 -->
+    <div class="calendar-index">
+        <div class="calendar-month">
+            2015年5月<a href="#" class="btn-prev"><i class="ico-calendar-prev"></i></a><a href="#" class="btn-next"><i class="ico-calendar-next"></i></a>
+        </div>
+        <table class="calendar-table">
+            <tr>
+                <th>一</th>
+                <th>二</th>
+                <th>三</th>
+                <th>四</th>
+                <th>五</th>
+                <th>六</th>
+                <th>日</th>
+            </tr>
+            <tr>
+                <td class="other-month"><span>28</span><i></i></td>
+                <td class="other-month"><span>29</span></td>
+                <td class="other-month"><span>30</span></td>
+                <td class="other-month"><span>31</span></td>
+                <td><span>1</span></td>
+                <td class="state-impt"><span>2</span><i></i></td>
+                <td><span>3</span></td>
+            </tr>
+            <tr>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+            </tr>
+            <tr>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+            </tr>
+            <tr>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td class="selected"><span>21</span><i></i></td>
+                <td class="state-impt"><span>22</span><i></i></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+            </tr>
+            <tr>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+            </tr>
+            </table>
+    </div>
+
+</div>
+        <!-- /左侧日历索引 -->
+        <!--右侧管理事件详情页面开始-->
+        <div class="event-detail">
+            <div class="detail-header" >
+                <span><a href="javascript:void(0);">我的台历</a><i class="icon-calendar-crumb"></i></span>
+                <span>查看详情</span>
+            </div>
+            <div class="manage-new">
+                <div class="new-btn">
+                    <a href="javascript:void(0);" class="left"><span>编辑</span></a>
+                    <a href="javascript:void(0);" class="left"><span>删除</span></a>
+                    <a href="javascript:void(0);" class="right vertical-middle"><i class="icon-calendar-reflash mid-icon"></i><span class="mid-text">刷新</span></a>
+                    <a href="javascript:void(0);" class="right vertical-middle"><i class="icon-calendar-arrow-left mid-icon"></i><span class="mid-text">返回</span></a>
+                </div>
+                <div class="detail-title">
+                    <h3>移动端企业圈dubbo协议讨论</h3>
+                    <p>
+                        <span>Robert (杨令龙)</span>
+                        <span>2015-07-24 15:56</span>
+                        <span><a href="javascript:viod(0);">207</a>人可见</span>
+                        <span>标签：<em>会议</em></span></p>
+                </div>
+            </div>
+            <div class="detail-content">
+                <div class="tetail-table">
+                    <div>
+                        <span class="sp_1"><em>台历：</em></span>
+                        <span><strong>803-大会议室</strong></span>
+                    </div>
+                    <div>
+                        <span class="sp_1"><em>开始：</em></span>
+                        <span><strong>2015年7月27日 星期一 10:00</strong></span>
+                    </div>
+                    <div>
+                        <span class="sp_1"><em>结束：</em></span>
+                        <span><strong>2015年7月27日 星期一 11:00</strong></span>
+                    </div>
+                    <div>
+                        <span class="sp_1"><em>重复：</em></span>
+                        <span><strong>不重复</strong></span>
+                    </div>
+                    <div>
+                        <span class="sp_1"><em>参与人：</em></span>
+                        <span><strong>Smile(王佩)  Allstar(欧阳先伟)  Ricky(李雪) Henry(霍文旌)  Max(乔小众), Smart(蔡雪钧)</strong>
+                            <span><a href="javascript:viod(0);">20</a>人参与</span></span>
+                    </div>
+                    <div class="detail_file">
+                        <span class="sp_1"><em>引用：</em></span>
+                        <span>
+                            <ul class="detail-quote">
+                                <li class="vitical-middle">
+                                <i class="icon-calendar-modico16-memo mid-icon"></i>
+                                <span class="file-name mid-text">备忘</span><a class="mid-text">2015-7-22 用户拜访记录</a>
+                        </li>
+                        <li class="vitical-middle">
+                            <i class="icon-calendar-modico16-memo mid-icon"></i>
+                            <span class="file-name mid-text">备忘</span>
+                            <a class="mid-text">户台历需求原型.RAR</a>
+                        </li>
+                        <li class="vitical-middle">
+                            <i class="icon-calendar-modico16-plan mid-icon"></i>
+                            <span class="file-name mid-text">计划</span>
+                            <a class="mid-text">2015年第13周计划</a>
+                        </li>
+                        </ul>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="sp_1"><em>到期提醒：</em></span>
+                        <span><span class="settings">目前只有事件创建人可用，仅提醒事件参与人</span><a href="javascript:viod(0);">设置提醒</a></span>
+                    </div>
+                    <div>
+                        <span class="sp_1"><em>评论通知：</em></span>
+                        <span><span class="settings">不通知</span><a href="javascript:viod(0);">关闭通知</a></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 事件评论详情 -->
+            <div class="event-comment">
+            <div class="comment-write-content">
+               <!--  <div class="comment-input-top">
+                    <span class="comment-number">评论（12）</span>
+                    <span class="ordering-rule vertical-middle"><a href="avscript:void(0);" class="mid-text">正序浏览</a><i class=" mid-icon"></i></span>
+                </div>
+                <div class="textarea-content">
+                    <textarea rows="30" cols="50" name="editor01">请输入.</textarea>
+                    <script type="text/javascript">
+                     CKEDITOR.replace('editor01');
+                     </script>
+                </div>
+                <div class="file-upLoad">
+                    <ul class="file-list">
+                        <li class="file-list-item"><span class="file-name">js_class.html</span><span class="comment-file-size">(16.02 KB)</span><a href="javascript:void(0);" class="delete-file">删除</a></li>
+                        <li class="file-list-item"><span class="comment-file-name">js_class.html</span><span class="comment-file-size">(16.02 KB)</span><a href="javascript:void(0);" class="delete-file">删除</a></li>
+                    </ul>
+                    <p class="set-comment"><a href="#" class="upload- vertical-middle"><i class="icon-calendar-commpic-attach mid-icon"></i><span class="mid-text upload-att">上传附件</span></a><a href="#"><input type="checkbox" id="event-create" class="event-create"/><label for="event-create">提醒创建人</label></a><a href="#"><input type="checkbox" id="event-share" class="event-share"/><label for="event-share">提醒共享人</label></a></p>
+                </div>
+                <div class="comtent-submit">
+                <a href="javascript:void(0);">提交</a>
+                </div> -->
+            </div>
+               
+                <div class="comment-list">
+                    <div class="comment-top-text">
+                        <div class="left-img">
+                            <img src="https://web.jingoal.com/module/static/v2/images/user.jpg">
+                        </div>
+                        <div class="right-detail">
+                            <p class="user-message"><span class="user-name">Nike (张涛)</span><em class="slash">/</em><span class="comment-time">评论于<strong>2015-03-20 13:24</strong></span></p>
+                            <p class="comment-detail">因近两天工作任务较紧急，我的分享文档写得比较匆忙，主要精力都放在跟同事们的案例分享和实际撰写的沟通中了，还请大家理解。</p>
+                        </div>
+                <div class="comment-write-content">
+                    <div class="comment-input-top">
+                        <span class="comment-number">评论（12）</span>
+                        <span class="ordering-rule vertical-middle"><a href="avscript:void(0);" class="mid-text">正序浏览</a><i class=" mid-icon"></i></span>
+                    </div>
+                    <div class="textarea-content">
+                        <textarea rows="30" cols="50" name="editor01">请输入.</textarea>
+                        <script type="text/javascript">
+                        // CKEDITOR.replace('editor01');
+                        </script>
+                    </div>
+                    <div class="file-upLoad">
+                        <ul class="file-list">
+                            <li class="file-list-item"><span class="file-name">js_class.html</span><span class="comment-file-size">(16.02 KB)</span><a href="javascript:void(0);" class="delete-file">删除</a></li>
+                            <li class="file-list-item"><span class="comment-file-name">js_class.html</span><span class="comment-file-size">(16.02 KB)</span><a href="javascript:void(0);" class="delete-file">删除</a></li>
+                        </ul>
+                        <p class="set-comment"><a href="#" class="upload- vertical-middle"><i class="icon-calendar-commpic-attach mid-icon"></i><span class="mid-text upload-att">上传附件</span></a>
+                            <a href="#">
+                                <input type="checkbox" id="event-create" class="event-create" />
+                                <label for="event-create">提醒创建人</label>
+                            </a>
+                            <a href="#">
+                                <input type="checkbox" id="event-share" class="event-share" />
+                                <label for="event-share">提醒共享人</label>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="comtent-submit">
+                        <a href="javascript:void(0);">提交</a>
+                    </div>
+                </div>
+                <div class="comment-list">
+                    <div class="comment-item">
+                        <div class="comment-top-text">
+                            <div class="left-img">
+                                <img src="https://web.jingoal.com/module/static/v2/images/user.jpg">
+                            </div>
+                            <div class="right-detail">
+                                <p class="user-message"><span class="user-name "> 2</span><em class="slash">/</em><span class="comment-time">评论于<strong class="">2016-02-01 17:37</strong></span></p>
+                                <div class="comment-detail "></div>
+                            </div>
+                            <div class="comment-up-file">
+                                <div class="file-title">附件：</div>
+                                <table class="table-list file-list1">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="comment-td layout-float-wrap file-name-wrap">
+                                                    <div class="file-icon layout-float-left">
+                                                        <i class="icon-calendar-text-word"></i>
+                                                    </div>
+                                                    <div class="file-info layout-float-left">
+                                                        <div class="file-name ">
+                                                            2 (1).jpg<span class="font-grey "> (7.4 KB) </span>
+                                                        </div>
+                                                        <div class="file-action">
+                                                            <a class="mid-text" href="/resources/?rid=69221&amp;url=token">下载</a><a class="mid-text">预览</a><a class="mid-text">访问记录</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end ngRepeat: (index4,item4) in item3.atts -->
+                                                <div class="comment-td layout-float-wrap file-name-wrap" ng-repeat="(index4,item4) in item3.atts">
+                                                    <div class="file-icon layout-float-left">
+                                                        <i class="icon-calendar-text-word"></i>
+                                                    </div>
+                                                    <div class="file-info layout-float-left">
+                                                        <div class="file-name ">
+                                                            360MobileMgr.exe<span class="font-grey "> (5.5 MB) </span>
+                                                        </div>
+                                                        <div class="file-action">
+                                                            <a class="mid-text" href="/resources/?rid=69222&amp;url=token">下载</a><a class="mid-text">预览</a><a class="mid-text">访问记录</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end ngRepeat: (index4,item4) in item3.atts -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="comment-handle">
+                                <a href="javascript:void(0);">编辑</a><span class="slash">|</span><a href="javascript:void(0);">删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- /事件评论详情 -->
+        </div>
+        <!--/右侧事件详情页面结束-->
+    </div>
+</body>
+
+</html>

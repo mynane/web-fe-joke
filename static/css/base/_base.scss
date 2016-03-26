@@ -1,0 +1,81 @@
+/**
+ *     公共less方法
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+html {
+  background-color: #edeff0;
+  overflow-y: auto;
+  height:100%;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, table, th, td, embed, object {
+    padding: 0;
+    margin: 0; 
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Helvetica", "Tahoma", "Microsoft Yahei", "微软雅黑", "Simsun", "宋体";
+  background-color:#eee;
+  height:100%;
+}
+label {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+a {
+  text-decoration: none;
+  color: #616366;
+  cursor: pointer;
+  outline: none;
+}
+a:hover {
+  color: #2299ee;
+}
+em{
+  font-style: normal;
+}
+ul {
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+i {
+  background-image: url("../css/img/jingoalTaskIcon1x.png");
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+input {
+  outline: none;
+}
+input::-ms-clear {
+  display: none;
+}
+.wrap{
+  width:960px;
+  height:40px;
+  background-color:transparent;
+  margin:0 auto;
+}

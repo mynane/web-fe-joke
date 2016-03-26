@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>功能设置</title>
+    <link rel="stylesheet" type="text/css" href="../web-fe-common/style/dest/jingoal.css">
+    <link rel="stylesheet" type="text/css" href="../static/dest/css/calendar.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 侧边栏导航 -->
+        <div class="sidebar">
+            <!-- 快捷操作 -->
+            <div class="shortcut">
+                <div class="shortcut-btn"><i class="ico-add"></i>新建申请</div>
+            </div>
+            <!-- 左侧菜单 -->
+            <div class="nav-panel">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <!-- 鼠标移入的样式还没有正式写呢 -->
+                        <a class="nav-item-hd cur" href="#"><i class="ico-triangle-down"><b></b></i><i class="icon-calendar"></i><span>全部台历全部台历全部台历全部台历</span></a>
+                        <ul class="nav-content" style="height:93px;">
+                            <!-- 每个li的高度为31px -->
+                            <li><a href="#"><span>培训台历</span></a></li>
+                            <li><a href="#"><span>Lee(李兴)的日程的日程的日程</span></a></li>
+                            <li><a href="#"><span>Lee(李兴)的台历的日程的日程</span></a></li>
+                            <li><a href="#"><span>Lee(李兴)的会议</span></a></li>
+                            <li><a href="#"><span>Lee(李兴)的日程</span></a></li>
+                            <li><a href="#"><span>Lee(李兴)的台历</span></a></li>
+                            <li><a href="#"><span>Lee(李兴)的会议</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hd" href="#"><i class="ico-triangle-down"></i><i class="icon-my"></i><span>我的台历</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hd" href="#"><i class="ico-triangle-down"></i><i class="icon-calendar-manage"></i><span>台历管理</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-hd" href="#"><i class="ico-triangle-down"></i><i class="icon-setting"></i><span>功能设置</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 左侧日历索引 -->
+            <div class="calendar-index">
+                <div class="calendar-month">
+                    2015年5月<a href="#" class="btn-prev"><i class="ico-calendar-prev"></i></a><a href="#" class="btn-next"><i class="ico-calendar-next"></i></a>
+                </div>
+                <table class="calendar-table">
+                    <tr>
+                        <th>一</th>
+                        <th>二</th>
+                        <th>三</th>
+                        <th>四</th>
+                        <th>五</th>
+                        <th>六</th>
+                        <th>日</th>
+                    </tr>
+                    <tr>
+                        <td class="other-month"><span>28</span><i></i></td>
+                        <td class="other-month"><span>29</span></td>
+                        <td class="other-month"><span>30</span></td>
+                        <td class="other-month"><span>31</span></td>
+                        <td><span>1</span></td>
+                        <td class="state-impt"><span>2</span><i></i></td>
+                        <td><span>3</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td><span>5</span></td>
+                        <td><span>6</span></td>
+                        <td><span>7</span></td>
+                        <td><span>8</span></td>
+                        <td><span>9</span></td>
+                        <td><span>10</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>11</span></td>
+                        <td><span>12</span></td>
+                        <td><span>13</span></td>
+                        <td><span>14</span></td>
+                        <td><span>15</span></td>
+                        <td><span>16</span></td>
+                        <td><span>17</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>18</span></td>
+                        <td><span>19</span></td>
+                        <td><span>20</span></td>
+                        <td class="selected"><span>21</span><i></i></td>
+                        <td class="state-impt"><span>22</span><i></i></td>
+                        <td><span>23</span></td>
+                        <td><span>24</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>25</span></td>
+                        <td><span>26</span></td>
+                        <td><span>27</span></td>
+                        <td><span>28</span></td>
+                        <td><span>29</span></td>
+                        <td><span>30</span></td>
+                        <td><span>31</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- /左侧日历索引 -->
+        <!--右侧管理页面开始-->
+        <div class="main-panel">
+            <div class="manage-container">
+                <!-- tab 页开始 -->
+                <ul class="manage-tab">
+                    <li class="li_1 active"><a href="javascript:void(0);">台历管理</a><div class="tab-selected-indicator"></div></li>
+                    <li class="li_2"><a href="javascript:void(0);">标签管理</a><div class="tab-selected-indicator"></div></li>
+                    <li class="li_3"><a href="javascript:void(0);">显示设置</a><div class="tab-selected-indicator"></div></li>
+                </ul>
+                <!--/ tab页结束 -->
+                <!-- 显示设置 -->
+                <div class="calendar-man calendar-set">
+                    <div class="set">
+                        重复、跨天事件：
+                        <div class="label-wrap" ui="type:checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                            </div>全部显示
+                        </div>
+                        <div class="label-wrap" ui="type:checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                            </div>仅显示最近一次
+                        </div>
+                    </div>
+                </div>
+                <!-- /显示设置 -->
+                <!-- 标签管理 -->
+                <div class="calendar-man calendar-tab-man" style="display:none;">
+                    <div class="top-bar">
+                        <p class="actions"><a href="#" class="btn-new-tag">新建标签</a></p>
+                        <p class="reminder" style="display:none;">设置标签，请联系<a href="javascript:void(0);">标签管理员</a>或者<a href="javasc:viod(0);">系统管理员</a></p>
+                    </div>
+                    <div class="table">
+                        <!-- 当不为管理员时会少一列哦，注意分页的地方也需要改colspan的值 -->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="td-1">标签名称</th>
+                                    <th class="td-2">标签说明</th>
+                                    <th class="cmt-acts">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>任务（学院)</td>
+                                    <td></td>
+                                    <td class="cmt-acts"><a href="#">编辑</a><span></span><a href="#">停用</a></td>
+                                </tr>
+                                <tr>
+                                    <td>会议</td>
+                                    <td></td>
+                                    <td class="cmt-acts"><a href="#">编辑</a><span></span><a href="#">启用</a></td>
+                                </tr>
+                                <tr>
+                                    <td>909开会</td>
+                                    <td></td>
+                                    <td class="cmt-acts"><a href="#">编辑</a><span></span><a href="#">启用</a></td>
+                                </tr>
+                                <tr>
+                                    <td>808开会</td>
+                                    <td>移动中心</td>
+                                    <td class="cmt-acts"><a href="#">编辑</a><span></span><a href="#">启用</a></td>                                  
+                                </tr>
+                                <tr>
+                                    <td>任务（学院)</td>
+                                    <td></td>
+                                    <td class="cmt-acts"><a href="#">编辑</a><span></span><a href="#">启用</a></td>
+                                </tr>
+                                <tr>
+                                    <td>909-2会议室（小）</td>
+                                    <td></td>
+                                    <td class="cmt-acts"><a href="#">编辑</a><span></span><a href="#">启用</a></td>
+                                </tr>
+                                <tr>
+                                    <td>任务（学院)</td>
+                                    <td></td>
+                                    <td class="cmt-acts"><a href="#">编辑</a><span></span><a href="#">启用</a></td>
+                                </tr>
+                                <tr>
+                                    <td>任务（学院)</td>
+                                    <td></td>
+                                    <td class="cmt-acts"><a href="#">编辑</a><span></span><a href="#">启用</a></td>
+                                </tr>
+                                <tr>
+                                    <td>任务（学院)</td>
+                                    <td></td>
+                                    <td class="cmt-acts"><a href="#">编辑</a><span></span><a href="#">启用</a></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" class="td-pager">
+                                    <div class="page-wrap">
+                                        <ul class="page-list">
+                                            <li class="page-btn-prev disable"><i class="icon-arrow-left"></i>上一页</li>
+                                            <li class="page-item">1</li>
+                                            <li class="page-item">5</li>
+                                            <li class="page-item">6</li>
+                                            <li class="page-item">7</li>
+                                            <li class="page-item">8</li>
+                                            <li class="page-item">9</li>
+                                            <li class="page-item">10</li>
+                                            <li class="page-item">11</li>
+                                            <li class="page-ellipsis">…</li>
+                                            <li class="page-btn-next">下一页<i class="icon-arrow-right"></i></li>
+                                            <li class="page-text">共102页，</li>
+                                            <li class="page-text">到第</li>
+                                            <li class="page-text page-input vertical-middle"><input type="text" class="mid-text page-position"></li>
+                                            <li class="page-text">页</li>
+                                            <li class="page-btn btn grey">确定</li>
+                                        </ul>
+                                    </div>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <!-- / 标签管理-->
+                <!-- 台历管理 -->
+                <div class="calendar-man manage-detail" style="display:block;">
+                    <div class="top-bar">
+                        <div class="actions">
+                        <a href="javascript:void(0);" class="left btn-new-calendar">新建台历</a>
+                        <a href="javascript:void(0);" class="right vertical-middle btn-reflash"><i class="icon-calendar-reflash mid-icon"></i><span class="mid-text">刷新</span></a>
+                        <a href="javascript:void(0);" class="right vertical-middle btn-return"><i class="icon-calendar-arrow-left mid-icon"></i><span class="mid-text">返回</span></a>
+                        </div>
+                    </div>
+                    <div class="table manage-table">
+                        <table>
+                            <colgroup>
+                                <col class="col-name">
+                                    <col class="col-desc">
+                                        <col class="col-user">
+                                            <col class="col-notice">
+                                                <col class="col-acts">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <!-- cmt calender-manage-table -->
+                                    <th class="cmt-name">台历名称</th>
+                                    <th class="cmt-desc">台历说明</th>
+                                    <th class="cmt-user">创建人</th>
+                                    <th class="cmt-notice"><span>新事件通知</span><div class="setting-tips"><a href="javascript:void(0);"><i class="icon-calendar-commpic-help"></i></a>
+                                    <div class="modal-wrap popover left pop-setting-tips" style="top: -45px; left: 28px; display: block;">
+                                        <div class="arrow" style="top:54px;">
+                                            <div class="inner-arrow"></div>
+                                        </div>
+                                        <div class="popover-inner">
+                                            <div class="popover-content">勾选此项，当台历获取新事件时会通过系统消息通知您，并且未读事件将以红点标记。
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </th>
+                                    <th class="cmt-acts">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tr-hidden">
+                                    <td><a href="javascript:void(0);" class="tr-title">909-2小会议室（大会旁边）</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo5">
+                                            <input type="radio" id="rdo5">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">Selar(高剑)的休假</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                       <label class="switch open" for="rdo6">
+                                            <input type="radio" id="rdo6">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">909-2小会议室（大会旁边）</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo5">
+                                            <input type="radio" id="rdo5">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">Selar(高剑)的休假</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                       <label class="switch open" for="rdo6">
+                                            <input type="radio" id="rdo6">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">909-2小会议室（大会旁边）</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo5">
+                                            <input type="radio" id="rdo5">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">Selar(高剑)的休假</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                       <label class="switch open" for="rdo6">
+                                            <input type="radio" id="rdo6">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">909-2小会议室（大会旁边）</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo5">
+                                            <input type="radio" id="rdo5">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">Selar(高剑)的休假</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                       <label class="switch open" for="rdo6">
+                                            <input type="radio" id="rdo6">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">909-2小会议室（大会旁边）</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo5">
+                                            <input type="radio" id="rdo5">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">Selar(高剑)的休假</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                       <label class="switch open" for="rdo6">
+                                            <input type="radio" id="rdo6">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">909-2小会议室（大会旁边）</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo5">
+                                            <input type="radio" id="rdo5">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">Selar(高剑)的休假</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                       <label class="switch open" for="rdo6">
+                                            <input type="radio" id="rdo6">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">909-2小会议室（大会旁边）</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo5">
+                                            <input type="radio" id="rdo5">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">Selar(高剑)的休假</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                       <label class="switch open" for="rdo6">
+                                            <input type="radio" id="rdo6">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">培训台历</a></td>
+                                    <td class="cmt-desc">新，以此为准。可以开始预订新，以此为准。可以开始预订新，以此为准。订</td>
+                                    <td>Norah(李姝)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo1">
+                                            <input type="radio" id="rdo1">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">803-大会议室</a></td>
+                                    <td class="cmt-desc">可容纳30-40人，请提前预约，根据具体情况提前安排会议</td>
+                                    <td>Maggie(崔雅涵)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo2">
+                                            <input type="radio" id="rdo2">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">909-大会议室</a></td>
+                                    <td class="cmt-desc">带投影仪的小会议室</td>
+                                    <td>Maggie(崔雅涵)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo3">
+                                            <input type="radio" id="rdo3">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="tr-hidden">
+                                    <td><a href="javascript:void(0);" class="tr-title">909-1小会议室</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Maggie(崔雅涵)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo4">
+                                            <input type="radio" id="rdo4">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">显示</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">909-2小会议室（大会旁边）</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                        <label class="switch open" for="rdo5">
+                                            <input type="radio" id="rdo5">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0);" class="tr-title">Selar(高剑)的休假</a></td>
+                                    <td class="cmt-desc">大会议室旁边小会议室</td>
+                                    <td>Howard(郝华明)</td>
+                                    <td class="cmt-notice">
+                                       <label class="switch open" for="rdo6">
+                                            <input type="radio" id="rdo6">
+                                        </label>
+                                    </td>
+                                    <td class="cmt-acts">
+                                        <a href="jvascript:viod(0);">查看</a><span></span><a href="jvascript:viod(0);">隐藏</a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-down"></i></a><span></span><a href="jvascript:viod(0);"><i class="icon-calendar-arrow-up"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5" class="td-pager">
+                                    <div class="page-wrap">
+                                        <ul class="page-list">
+                                            <li class="page-btn-prev disable"><i class="icon-arrow-left"></i>上一页</li>
+                                            <li class="page-item">1</li>
+                                            <li class="page-item">5</li>
+                                            <li class="page-item">6</li>
+                                            <li class="page-item">7</li>
+                                            <li class="page-item">8</li>
+                                            <li class="page-item">9</li>
+                                            <li class="page-item">10</li>
+                                            <li class="page-item">11</li>
+                                            <li class="page-ellipsis">…</li>
+                                            <li class="page-btn-next">下一页<i class="icon-arrow-right"></i></li>
+                                            <li class="page-text">共102页，</li>
+                                            <li class="page-text">到第</li>
+                                            <li class="page-text page-input vertical-middle"><input type="text" class="mid-text page-position"></li>
+                                            <li class="page-text">页</li>
+                                            <li class="page-btn btn grey">确定</li>
+                                        </ul></div>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="empty-box" style="display:none;">
+                            <p><i class="icon-calendar-list-empty"></i></p>
+                            <p class="empty-msg">暂无台历</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/台历管理  -->
+            </div>
+        </div>
+        <!--/右侧管理页面结束-->
+        <!-- 弹出框 -->
+        <!-- 新建台历 -->
+         <div class="modal-wrap popover setting-popover" style="left: 211px; top: 17px;">
+            <div class="modal-title">
+                <h3 class="title">新建台历</h3>
+                <span class="close">×</span>
+            </div>
+            <div class="modal-body">
+                <div class="edit-form">
+                    <ul class="form-list">
+                        <li class="form-item">
+                            <label class="item-title">
+                                <span class="mid-text font-red">*</span> <span class="mid-text">名称：</span>
+                            </label>
+                            <div class="item-content">
+                                <div class="text-input-wrap">
+                                    <input type="text" placeholder="请输入台历名称">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label class="item-title"><span class="mid-text">共享给：</span>
+                            </label>
+                            <div class="item-content">
+                                <div class="inline-block-top">
+                                    <div class="text-input-wrap">
+                                        <input type="text" placeholder="选择人员或部门">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label class="item-title">
+                                <span class="mid-text">说明：</span>
+                            </label>
+                            <div class="item-content">
+                                <div class="textarea-wrap">
+                                    <div class="textarea-wrap-helper">
+                                    <textarea class="topic-detail" placeholder="请对台历详细描述"></textarea></div>
+                                    <div class="num-reminder">（<span>0</span>/60）字</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                   <fieldset  class="more-items">
+                        <legend class="legend"><a href="#">高级</a></legend>
+                        <div class="more-items-panel" style="display:none;">
+                            <div class="form-item">
+                                <label class="item-title">事件创建人：</label>
+                                <div class="item-cotent">
+                                    <div class="label-wrap ui-checkbox">
+                                        <div class="checkbox-wrap"><input type="checkbox" class=" ui-hide"></div>我自己
+                                    </div>
+                                    <p class="item-prompt" style="display:none;">目前您无权选择其他创建人，请联系<em>系统管理员</em></p>
+                                    <div class="et-item-creators">
+                                        <div class="inline-block-top">
+                                            <div class="text-input-wrap w210"><input type="text" placeholder="选择事件创建人">
+                                            </div>
+                                        </div><div class="third-element inline-block-top">
+                                            <div class="person-add vertical-middle"><i class="mid-icon icon-cross"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <div class="form-item item-et-tag">
+                               <label class="item-title">事件标签：</label>
+                                <div class="item-content">
+                                    <div class="input-group w210">
+                                        <div class="input-right-label input-select vertical-middle"><i class="mid-icon icon-triangle-down"></i></div>
+                                        <div class="text-input-wrap readonly">
+                                            <span class="textlike">选择标签</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="arrow-top"><span class="inner-arrow"></span></span>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn cancel">取消</button><button class="btn confirm">确定</button>
+            </div>
+        </div>
+        <!-- 新建标签 -->
+        <div class="modal-wrap popover setting-popover" style="left: 750px; top: 17px;">
+            <div class="modal-title">
+                <h3 class="title">新建标签</h3>
+                <span class="close">×</span>
+            </div>
+            <div class="modal-body">
+                <div class="edit-form edit-form-tag">
+                    <ul class="form-list">
+                        <li class="form-item">
+                            <label class="item-title">
+                                <span class="mid-text font-red">*</span> <span class="mid-text">名称：</span>
+                            </label>
+                            <div class="item-content">
+                                <div class="text-input-wrap">
+                                    <input type="text" placeholder="请输入台历名称">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label class="item-title">
+                                <span class="mid-text">说明：</span>
+                            </label>
+                            <div class="item-content">
+                                <div class="textarea-wrap">
+                                    <div class="textarea-wrap-helper">
+                                    <textarea class="topic-detail" placeholder="请对台历详细描述"></textarea></div>
+                                    <div class="num-reminder">（<span>0</span>/60）字</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn cancel">取消</button><button class="btn confirm">确定</button>
+            </div>
+        </div>
+        <!-- 台历详情 -->
+        <div class="modal-wrap popover setting-popover" style="left: 1311px; top: 17px;">
+            <div class="modal-title">
+                    <h3 class="title">台历详情</h3>
+                    <span class="close">×</span>
+                </div>
+                <div class="modal-body info-list">
+                    <ul class="form-list">
+                        <li class="info-title">
+                            803-大会议室
+                        </li>
+                        <li class="form-item">
+                            <label class="item-title right-text">
+                                创建人：
+                            </label>
+                            <div class="item-content">
+                                <span class="mid-text">Selar(高剑)</span><span class="mid-text font-grey">2015-05-27 13:43</span>
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label class="item-title right-text">
+                                创建人：
+                            </label>
+                            <div class="item-content">管理员, Adele(董小宇),  Mars(孟enry(霍文旌) Nana(杨晓娜), Jackie(陈大军), Benson(褚良武), Tony(唱利新), Timothy(王田), Norbert(黄平), Cherry(任崇), Viola(赵立维), Shawn(肖), Viola(赵立维), Shawn(肖), Viola(赵立维), Shawn(肖), Viola(赵立维), Shawn(肖), Viola(赵立维), Shawn(肖道宽), Herman(杨长胜), Natalie(张晶瑞), Snow(杨舒岩), East(张东方), Face(李岩), Jade(赵玉姝), Slash(周翔), Vase(陈秦娥), 时光寨, Yang(李朝阳), Sylar(贾传庆), Kevin(戴珂), Lydia(王秋玲), Hans(韩英汉), Vivi(李逶微), Robert (杨令龙), Tinker(郭建波), Spring(周丽君), Bolg(梁文波), Zachary(赵彬), Alberta(徐华), Leo(师世立), Kitty(邱琦), Ginny(杨靖), Penny(黄佩), Duke(杜国钧), Emma(李金召), Miya(王雪芳), Cyan(闫志红), Gigi(隗功喆), 钮定良, Yale(常延志), Linton(董春林), Shane(周楠), Max(乔小众), Smart(蔡雪钧), Skye(万丁), Tammy(佟君)
+                            
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label class="item-title right-text">
+                                标签：
+                            </label>
+                            <div class="item-content">
+                                请假，外出，会议，生日，日程
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label class="item-title right-text">
+                                说明：
+                            </label>
+                            <div class="item-content">
+                                此会议只针对公司内部培训用，请勿外传
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                     <button class="btn btn-link">删除</button><button class="btn btn-link">关闭</button><button class="btn confirm">编辑</button>
+                </div>
+        </div>
+        <!-- 标签详情 -->
+        <div class="modal-wrap popover setting-popover" style="left: 750px; top: 320px;">
+            <div class="modal-title">
+                    <h3 class="title">标签详情</h3>
+                    <span class="close">×</span>
+                </div>
+                <div class="modal-body info-list">
+                    <ul class="form-list">
+                        <li class="form-item">
+                            <label class="item-title right-text">
+                                <span class="mid-text font-red">*</span> <span class="mid-text">名称：</span>
+                            </label>
+                            <div class="item-content">
+                                重要
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label class="item-title right-text">
+                                创建人：
+                            </label>
+                            <div class="item-content">终于信息是的啊阿萨帝爱仕达阿大声道爱的爱施德安师大奥斯丁啊
+                            </div>
+                        </li>
+                        <li class="form-item">
+                            <label class="item-title right-text">
+                                关联事件：
+                            </label>
+                            <div class="item-content">
+                                1个事件
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <!-- 此处请注意看设计稿
+                        1.管理员：删除/关闭/编辑
+                        2.普通用户：<button class="btn link">关闭</button>
+                     -->
+                    <button class="btn btn-link">删除</button>
+                    <button class="btn btn-link">关闭</button>
+                    <button class="btn confirm">编辑</button>
+                </div>
+        </div>
+        <!-- 有标签管理权的用户 -->
+        <div class="modal-wrap popover setting-popover" style="left: 150px; top: 350px;">
+            <div class="modal-title">
+                    <h3 class="title">有标签管理权的用户</h3>
+                    <span class="close">×</span>
+                </div>
+                <div class="modal-body">
+                    <div class="name-list">管理员, Adele(董小宇),  Mars(孟庆友),  Vince(文荣), Henry(霍文旌)Nana(杨晓娜), Jackie(陈大军), Benson(褚良武), Tony(唱利新), Timothy(王田), Norbert(黄平), Cherry(任崇), Viola(赵立维), Shawn(肖道宽), Herman(杨长胜), Natalie(张晶瑞), Snow(杨舒岩), East(张东方), Face(李岩), Jade(赵玉姝), Slash(周翔), Vase(陈秦娥), 时光寨, Yang(李朝阳), Sylar(贾传庆), Kevin(戴珂), Lydia(王秋玲), Hans(韩英汉), Vivi(李逶微), Robert (杨令龙), Tinker(郭建波), Spring(周丽君), Bolg(梁文波), Zachary(赵彬), Alberta(徐华), Leo(师世立), Kitty(邱琦), Ginny(杨靖), Penny(黄佩), Duke(杜国钧), Emma(李金召), Miya(王雪芳), Cyan(闫志红), Gigi(隗功喆), 钮定良, Yale(常延志), Linton(董春林), Shane(周楠), Max(乔小众), Smart(蔡雪钧), Skye(万丁), Tammy(佟君)Duke(杜国钧), Emma(李金召), Miya(王雪芳), Cyan(闫志红), Gigi(隗功喆)Duke(杜国钧), Emma(李金召), Miya(王雪芳), Cyan(闫志红), Gigi(隗功喆)管理员, Adele(董小宇),  Mars(孟庆友),  Vince(文荣), Henry(霍文旌)Nana(杨晓娜), Jackie(陈大军), Benson(褚良武), Tony(唱利新), Timothy(王田), Norbert(黄平), Cherry(任崇), Viola(赵立维), Shawn(肖道宽), Herman(杨长胜), Natalie(张晶瑞), Snow(杨舒岩), East(张东方), Face(李岩), Jade(赵玉姝), Slash(周翔), Vase(陈秦娥), 时光寨, Yang(李朝阳), Sylar(贾传庆), Kevin(戴珂), Lydia(王秋玲), Hans(韩英汉), Vivi(李逶微), Robert (杨令龙), Tinker(郭建波), Spring(周丽君), Bolg(梁文波), Zachary(赵彬), Alberta(徐华), Leo(师世立), Kitty(邱琦), Ginny(杨靖), Penny(黄佩), Duke(杜国钧), Emma(李金召), Miya(王雪芳), Cyan(闫志红), Gigi(隗功喆), 钮定良, Yale(常延志), Linton(董春林), Shane(周楠), Max(乔小众), Smart(蔡雪钧), Skye(万丁), Tammy(佟君)Duke(杜国钧), Emma(李金召), Miya(王雪芳), Cyan(闫志红), Gigi(隗功喆)Duke(杜国钧), Emma(李金召), Miya(王雪芳), Cyan(闫志红), Gigi(隗功喆)</div>
+                </div>
+                <div class="modal-footer">
+                    <!-- 此处请注意看设计稿
+                        1.管理员：删除/关闭/编辑
+                        2.普通用户：<button class="btn link">关闭</button>
+                     -->
+                    <button class="btn btn-link">删除</button>
+                    <button class="btn btn-link">关闭</button>
+                    <button class="btn confirm">编辑</button>
+                </div>
+        </div>
+        <!-- 、有标签管理权的用户 -->
+        <!-- /弹出框 -->
+    </div>
+    <!-- 编写静态页面时写的测试代码，请及时删除 -->
+    
+    <script type="text/javascript">
+    // // .day-view的最小高度要与.day-view-wrap的高度同时设置
+    // var clientHeight = document.body.clientHeight;
+    // console.log(clientHeight);
+    // var a = document.getElementsByClassName("day-view-wrap");
+    // var c = document.getElementsByClassName("day-view");
+    // var b = a ? a[0] : null;
+    // var d = c ? c[0] : null;
+    // if (b) {
+    //     b.style.height = (clientHeight - 98) + 'px';
+    // }
+    // if (d) {
+    //     d.style.minHeight = (clientHeight - 98) + 'px';
+    // }
+    //
+    </script>
+    <script type="text/javascript" src="http://www.jingoal.com/refactor/static/js/jquery-1.8.3.min.js?v=20160126"></script>
+    <script>
+    /**
+     *测试使用，尽快删除
+     */
+    $(function() {
+        $('.switch').click(function(event) {
+            if ($(this).hasClass('open')) {
+                $(this).removeClass('open').addClass('close');
+                return false;
+            } else if ($(this).hasClass('close')) {
+                $(this).removeClass('close').addClass('open');
+                return false;
+            }
+        });
+
+        $('ul.manage-tab').on('click', 'li', function(event) {
+
+            if (!$(this).hasClass('active')) {
+                $(this).addClass('active').siblings().removeClass('active');
+                if ($(this).hasClass('li_1')) {
+                    $('div.manage-detail').show();
+                    $('div.calendar-tab-man').hide();
+                    $('div.calendar-set').hide();
+
+                } else if ($(this).hasClass('li_2')) {
+                    $('div.manage-detail').hide();
+                    $('div.calendar-tab-man').show();
+                    $('div.calendar-set').hide();
+                } else if ($(this).hasClass('li_3')) {
+                    $('div.manage-detail').hide();
+                    $('div.calendar-tab-man').hide();
+                    $('div.calendar-set').show();
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

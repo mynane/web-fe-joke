@@ -1,0 +1,1 @@
+﻿CKEDITOR.plugins.setLang("jingoalcombo","zh-cn",{indent:"缩进量",list:"项目列表",model:"对齐方式"});

@@ -1,0 +1,1 @@
+﻿CKEDITOR.plugins.setLang("jingoalcombo","zh",{indent:"縮進量",list:"項目列表",model:"對齊方式"});

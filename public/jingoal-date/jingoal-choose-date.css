@@ -1,0 +1,98 @@
+.jingoal_input_date_wrap{
+    width: 202px;
+    background: #fff;
+    border:1px solid #ccc;
+    padding:4px;
+}
+.table.day-table td{
+    border-top:none;
+    padding:3px;
+    text-align:center;
+    position:relative;
+    cursor:pointer
+}
+.table.day-table td i{
+    pointer-events:none;
+}
+.table.day-table td:hover{
+    background-color:#d7d7d7
+}
+.day-table td.active:hover{
+    background-color:#008cff;
+}
+.day-table th{
+    font-weight:normal
+}
+.day-table thead tr:nth-child(2) th{
+    text-align:center;
+}
+
+.day-table td.active{
+    background-color:#008cff;
+    color:#fff
+}
+.day-table .day_item.today{
+    background-color:#8e9397;
+    color:#fff;
+}
+.day-table .day_item.today:hover{
+    background-color:#8e9397;
+    color:#fff;
+}
+.day-table .day_item.today.active{
+    background-color: #008cff;
+}
+.day-table td.active i{
+    background-color:#fff;
+}
+.day-table td.old,.day-table td.disabled{
+    color:#999
+}
+.day-table td i {
+    display:inline-block;
+    position:absolute;
+    background-color:#999;
+    height: 4px;
+    width: 4px;
+    left: 42%;
+    bottom:1px;
+}
+.day-table .day_item.today i{
+    background-color:#fff;
+}
+/*
+è€ƒå‹¤ç»„ä»¶çš„æ ·å¼
+ */
+/* è€ƒå‹¤ å¤šé€‰æ—¥åŽ† */
+.table.day-attend td{
+    border-top:none;
+    padding:3px 11px;
+    text-align:center;
+    cursor:pointer;
+}   
+.table.day-attend td:hover div{
+    background-color:#d7d7d7
+}
+.table.day-attend td.active:hover div{
+    background-color:#008cff;
+}
+.day-attend th{
+    font-weight:normal;
+}
+.day-attend thead tr:nth-child(2) th{
+    text-align:center;
+}
+.day-attend td.active div{
+    background-color:#008cff;
+    color:#fff;
+}
+.day-attend td.disabled div{
+    color:#999;
+}
+.day-attend td.old{
+    color:#999
+}
+input.w-ymd[readonly]{
+    background-color: #fff;
+    cursor:default;
+}

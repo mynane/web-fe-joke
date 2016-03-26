@@ -1,0 +1,7 @@
+1.	htmldataprocessor源码修改:
+	增加 function normalizeKE。优化blockquote结构，因为要最终转化成p标签缩进才能被新版编辑器识别，所以先对文档结构进行优化，保证在blockquote
+	元素中只有非blockquote子元素或者只包含一个blockquote子元素。因为p标签中不能包含p标签。然后对连续的blockquote标签替换成<p style="margin-left: blockquote个数*40px
+	
+	在toHtml 中调用normalizeKE。
+2.	重新实现了链接编辑插件。
+3.	在小窗口显示时，载入jingoalCombo插件，对缩进、对齐和列表三项进行下拉显示。

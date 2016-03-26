@@ -1,0 +1,872 @@
+2016-02-27 22:52:09 查询 select * from user
+2016-02-27 22:52:09 获取全部记录 select * from user
+2016-02-27 22:52:09 释放结果集
+2016-02-27 22:52:09 完成整个查询任务,所用时间为0.0034010410308838
+2016-02-27 22:53:01 查询 select * from user
+2016-02-27 22:53:01 获取全部记录 select * from user
+2016-02-27 22:53:01 释放结果集
+2016-02-27 22:53:01 完成整个查询任务,所用时间为0.0018589496612549
+2016-02-28 10:32:19 查询 select * from user
+2016-02-28 10:32:19 释放结果集
+2016-02-28 10:32:19 完成整个查询任务,所用时间为0.12313294410706
+2016-02-28 10:33:02 查询 select * from user
+2016-02-28 10:33:02 释放结果集
+2016-02-28 10:33:02 完成整个查询任务,所用时间为0.0028800964355469
+2016-02-28 10:34:32 查询 select name from user
+2016-02-28 10:34:32 释放结果集
+2016-02-28 10:34:32 完成整个查询任务,所用时间为0.0027990341186523
+2016-02-28 10:34:32 查询 select name from user
+2016-02-28 10:34:32 释放结果集
+2016-02-28 10:34:32 完成整个查询任务,所用时间为0.0019619464874268
+2016-02-28 10:34:32 查询 select name from user
+2016-02-28 10:34:32 释放结果集
+2016-02-28 10:34:32 完成整个查询任务,所用时间为0.001741886138916
+2016-02-28 10:34:33 查询 select name from user
+2016-02-28 10:34:33 释放结果集
+2016-02-28 10:34:33 完成整个查询任务,所用时间为0.0022988319396973
+2016-02-28 10:34:33 查询 select name from user
+2016-02-28 10:34:33 释放结果集
+2016-02-28 10:34:33 完成整个查询任务,所用时间为0.0021181106567383
+2016-02-28 10:34:33 查询 select name from user
+2016-02-28 10:34:33 释放结果集
+2016-02-28 10:34:33 完成整个查询任务,所用时间为0.0025231838226318
+2016-02-28 10:34:33 查询 select name from user
+2016-02-28 10:34:33 释放结果集
+2016-02-28 10:34:33 完成整个查询任务,所用时间为0.0018351078033447
+2016-02-28 10:34:33 查询 select name from user
+2016-02-28 10:34:33 释放结果集
+2016-02-28 10:34:33 完成整个查询任务,所用时间为0.0020840167999268
+2016-02-28 10:34:34 查询 select name from user
+2016-02-28 10:34:34 释放结果集
+2016-02-28 10:34:34 完成整个查询任务,所用时间为0.0019309520721436
+2016-02-28 10:34:34 查询 select name from user
+2016-02-28 10:34:34 释放结果集
+2016-02-28 10:34:34 完成整个查询任务,所用时间为0.001762866973877
+2016-02-28 10:34:34 查询 select name from user
+2016-02-28 10:34:34 释放结果集
+2016-02-28 10:34:34 完成整个查询任务,所用时间为0.0019199848175049
+2016-02-28 10:34:34 查询 select name from user
+2016-02-28 10:34:34 释放结果集
+2016-02-28 10:34:34 完成整个查询任务,所用时间为0.0018539428710938
+2016-02-28 10:34:34 查询 select name from user
+2016-02-28 10:34:34 释放结果集
+2016-02-28 10:34:34 完成整个查询任务,所用时间为0.0025880336761475
+2016-02-28 10:34:35 查询 select name from user
+2016-02-28 10:34:35 释放结果集
+2016-02-28 10:34:35 完成整个查询任务,所用时间为0.0019369125366211
+2016-02-28 10:34:35 查询 select name from user
+2016-02-28 10:34:35 释放结果集
+2016-02-28 10:34:35 完成整个查询任务,所用时间为0.0023300647735596
+2016-02-28 10:34:35 查询 select name from user
+2016-02-28 10:34:35 释放结果集
+2016-02-28 10:34:35 完成整个查询任务,所用时间为0.0019330978393555
+2016-02-28 10:34:35 查询 select name from user
+2016-02-28 10:34:35 释放结果集
+2016-02-28 10:34:35 完成整个查询任务,所用时间为0.0024240016937256
+2016-02-28 10:34:36 查询 select name from user
+2016-02-28 10:34:36 释放结果集
+2016-02-28 10:34:36 完成整个查询任务,所用时间为0.002432107925415
+2016-02-28 10:34:36 查询 select name from user
+2016-02-28 10:34:36 释放结果集
+2016-02-28 10:34:36 完成整个查询任务,所用时间为0.0022368431091309
+2016-02-28 10:34:36 查询 select name from user
+2016-02-28 10:34:36 释放结果集
+2016-02-28 10:34:36 完成整个查询任务,所用时间为0.0018219947814941
+2016-02-28 10:38:40 查询 select name from user
+2016-02-28 10:38:40 释放结果集
+2016-02-28 10:38:40 完成整个查询任务,所用时间为1.0099160671234
+2016-02-28 10:38:42 查询 select name from user
+2016-02-28 10:38:42 释放结果集
+2016-02-28 10:38:42 完成整个查询任务,所用时间为0.0019659996032715
+2016-02-28 10:38:43 查询 select name from user
+2016-02-28 10:38:43 释放结果集
+2016-02-28 10:38:43 完成整个查询任务,所用时间为0.0019781589508057
+2016-02-28 10:38:43 查询 select name from user
+2016-02-28 10:38:43 释放结果集
+2016-02-28 10:38:43 完成整个查询任务,所用时间为0.0016121864318848
+2016-02-28 10:38:43 查询 select name from user
+2016-02-28 10:38:43 释放结果集
+2016-02-28 10:38:43 完成整个查询任务,所用时间为0.0021700859069824
+2016-02-28 10:38:43 查询 select name from user
+2016-02-28 10:38:43 释放结果集
+2016-02-28 10:38:43 完成整个查询任务,所用时间为0.0022449493408203
+2016-02-28 10:38:44 查询 select name from user
+2016-02-28 10:38:44 释放结果集
+2016-02-28 10:38:44 完成整个查询任务,所用时间为0.0019960403442383
+2016-02-28 10:38:44 查询 select name from user
+2016-02-28 10:38:44 释放结果集
+2016-02-28 10:38:44 完成整个查询任务,所用时间为0.002051830291748
+2016-02-28 10:38:44 查询 select name from user
+2016-02-28 10:38:44 释放结果集
+2016-02-28 10:38:44 完成整个查询任务,所用时间为0.0015969276428223
+2016-02-28 10:38:44 查询 select name from user
+2016-02-28 10:38:44 释放结果集
+2016-02-28 10:38:44 完成整个查询任务,所用时间为0.0015029907226562
+2016-02-28 10:38:55 查询 select name from user
+2016-02-28 10:38:55 释放结果集
+2016-02-28 10:38:55 完成整个查询任务,所用时间为0.0018718242645264
+2016-02-28 10:38:56 查询 select name from user
+2016-02-28 10:38:56 释放结果集
+2016-02-28 10:38:56 完成整个查询任务,所用时间为0.002047061920166
+2016-02-28 10:38:56 查询 select name from user
+2016-02-28 10:38:56 释放结果集
+2016-02-28 10:38:56 完成整个查询任务,所用时间为0.0020871162414551
+2016-02-28 10:38:56 查询 select name from user
+2016-02-28 10:38:56 释放结果集
+2016-02-28 10:38:56 完成整个查询任务,所用时间为0.002126932144165
+2016-02-28 10:39:37 查询 select name from user
+2016-02-28 10:39:37 获取一条记录 select name from user
+2016-02-28 10:39:37 释放结果集
+2016-02-28 10:39:37 完成整个查询任务,所用时间为0.0023050308227539
+2016-02-28 10:39:55 查询 select name from user
+2016-02-28 10:39:55 获取一条记录 select name from user
+2016-02-28 10:39:55 释放结果集
+2016-02-28 10:39:55 完成整个查询任务,所用时间为0.0023128986358643
+2016-02-28 10:39:56 查询 select name from user
+2016-02-28 10:39:56 获取一条记录 select name from user
+2016-02-28 10:39:56 释放结果集
+2016-02-28 10:39:56 完成整个查询任务,所用时间为0.0021090507507324
+2016-02-28 10:39:56 查询 select name from user
+2016-02-28 10:39:56 获取一条记录 select name from user
+2016-02-28 10:39:56 释放结果集
+2016-02-28 10:39:56 完成整个查询任务,所用时间为0.0016400814056396
+2016-02-28 10:39:56 查询 select name from user
+2016-02-28 10:39:56 获取一条记录 select name from user
+2016-02-28 10:39:56 释放结果集
+2016-02-28 10:39:56 完成整个查询任务,所用时间为0.0017650127410889
+2016-02-28 10:39:57 查询 select name from user
+2016-02-28 10:39:57 获取一条记录 select name from user
+2016-02-28 10:39:57 释放结果集
+2016-02-28 10:39:57 完成整个查询任务,所用时间为0.001741886138916
+2016-02-28 10:39:57 查询 select name from user
+2016-02-28 10:39:57 获取一条记录 select name from user
+2016-02-28 10:39:57 释放结果集
+2016-02-28 10:39:57 完成整个查询任务,所用时间为0.0020120143890381
+2016-02-28 10:39:57 查询 select name from user
+2016-02-28 10:39:57 获取一条记录 select name from user
+2016-02-28 10:39:57 释放结果集
+2016-02-28 10:39:57 完成整个查询任务,所用时间为0.0019750595092773
+2016-02-28 10:39:57 查询 select name from user
+2016-02-28 10:39:57 获取一条记录 select name from user
+2016-02-28 10:39:57 释放结果集
+2016-02-28 10:39:57 完成整个查询任务,所用时间为0.0019989013671875
+2016-02-28 10:40:20 查询 select name from user
+2016-02-28 10:40:20 获取一条记录 select name from user
+2016-02-28 10:40:20 释放结果集
+2016-02-28 10:40:20 完成整个查询任务,所用时间为0.0022261142730713
+2016-02-28 10:40:22 查询 select name from user
+2016-02-28 10:40:22 获取一条记录 select name from user
+2016-02-28 10:40:22 释放结果集
+2016-02-28 10:40:22 完成整个查询任务,所用时间为0.0023000240325928
+2016-02-28 10:40:22 查询 select name from user
+2016-02-28 10:40:22 获取一条记录 select name from user
+2016-02-28 10:40:22 释放结果集
+2016-02-28 10:40:22 完成整个查询任务,所用时间为0.0016899108886719
+2016-02-28 10:40:23 查询 select name from user
+2016-02-28 10:40:23 获取一条记录 select name from user
+2016-02-28 10:40:23 释放结果集
+2016-02-28 10:40:23 完成整个查询任务,所用时间为0.0015628337860107
+2016-02-28 10:40:23 查询 select name from user
+2016-02-28 10:40:23 获取一条记录 select name from user
+2016-02-28 10:40:23 释放结果集
+2016-02-28 10:40:23 完成整个查询任务,所用时间为0.0020668506622314
+2016-02-28 10:40:23 查询 select name from user
+2016-02-28 10:40:23 获取一条记录 select name from user
+2016-02-28 10:40:23 释放结果集
+2016-02-28 10:40:23 完成整个查询任务,所用时间为0.001708984375
+2016-02-28 10:40:25 查询 select name from user
+2016-02-28 10:40:25 获取一条记录 select name from user
+2016-02-28 10:40:25 释放结果集
+2016-02-28 10:40:25 完成整个查询任务,所用时间为0.0017039775848389
+2016-02-28 10:40:25 查询 select name from user
+2016-02-28 10:40:25 获取一条记录 select name from user
+2016-02-28 10:40:25 释放结果集
+2016-02-28 10:40:25 完成整个查询任务,所用时间为0.001971960067749
+2016-02-28 10:41:28 查询 select name from user
+2016-02-28 10:41:28 获取一条记录 select name from user
+2016-02-28 10:41:28 释放结果集
+2016-02-28 10:41:28 完成整个查询任务,所用时间为0.0022950172424316
+2016-02-28 10:41:35 查询 select name from user
+2016-02-28 10:41:35 获取一条记录 select name from user
+2016-02-28 10:41:35 释放结果集
+2016-02-28 10:41:35 完成整个查询任务,所用时间为0.0018789768218994
+2016-02-28 10:41:49 查询 select name from user
+2016-02-28 10:41:49 获取一条记录 select name from user
+2016-02-28 10:41:49 释放结果集
+2016-02-28 10:41:49 完成整个查询任务,所用时间为0.0019168853759766
+2016-02-28 10:41:49 查询 select name from user
+2016-02-28 10:41:49 获取一条记录 select name from user
+2016-02-28 10:41:49 释放结果集
+2016-02-28 10:41:49 完成整个查询任务,所用时间为0.0020561218261719
+2016-02-28 10:42:16 查询 select name from user
+2016-02-28 10:42:16 获取一条记录 select name from user
+2016-02-28 10:42:16 释放结果集
+2016-02-28 10:42:16 完成整个查询任务,所用时间为0.0020029544830322
+2016-02-28 10:43:03 查询 select name from user
+2016-02-28 10:43:03 获取一条记录 select name from user
+2016-02-28 10:43:03 释放结果集
+2016-02-28 10:43:03 完成整个查询任务,所用时间为0.0020089149475098
+2016-02-28 10:43:21 查询 select name from user
+2016-02-28 10:43:21 获取一条记录 select name from user
+2016-02-28 10:43:21 释放结果集
+2016-02-28 10:43:21 完成整个查询任务,所用时间为0.0023109912872314
+2016-02-28 10:43:21 查询 select name from user
+2016-02-28 10:43:21 获取一条记录 select name from user
+2016-02-28 10:43:21 释放结果集
+2016-02-28 10:43:21 完成整个查询任务,所用时间为0.0021669864654541
+2016-02-28 10:44:23 查询 select name from user
+2016-02-28 10:44:23 获取一条记录 select name from user
+2016-02-28 10:44:23 释放结果集
+2016-02-28 10:44:23 完成整个查询任务,所用时间为0.048202037811279
+2016-02-28 10:44:48 查询 select name from user
+2016-02-28 10:44:48 获取一条记录 select name from user
+2016-02-28 10:44:48 释放结果集
+2016-02-28 10:44:48 完成整个查询任务,所用时间为0.0024828910827637
+2016-02-28 10:45:03 查询 select name from user
+2016-02-28 10:45:03 获取一条记录 select name from user
+2016-02-28 10:45:03 释放结果集
+2016-02-28 10:45:03 完成整个查询任务,所用时间为0.0026881694793701
+2016-02-28 10:45:22 查询 select name from user
+2016-02-28 10:45:22 获取全部记录 select name from user
+2016-02-28 10:45:22 释放结果集
+2016-02-28 10:45:22 完成整个查询任务,所用时间为0.0022590160369873
+2016-02-28 10:45:23 查询 select name from user
+2016-02-28 10:45:23 获取全部记录 select name from user
+2016-02-28 10:45:23 释放结果集
+2016-02-28 10:45:23 完成整个查询任务,所用时间为0.002312183380127
+2016-02-28 10:45:23 查询 select name from user
+2016-02-28 10:45:23 获取全部记录 select name from user
+2016-02-28 10:45:23 释放结果集
+2016-02-28 10:45:23 完成整个查询任务,所用时间为0.0015921592712402
+2016-02-28 10:45:32 查询 select name from user
+2016-02-28 10:45:32 获取全部记录 select name from user
+2016-02-28 10:45:32 释放结果集
+2016-02-28 10:45:32 完成整个查询任务,所用时间为0.0025420188903809
+2016-02-28 11:00:51 查询 select name from user
+2016-02-28 11:00:51 获取全部记录 select name from user
+2016-02-28 11:00:51 释放结果集
+2016-02-28 11:00:51 完成整个查询任务,所用时间为1.0121259689331
+2016-02-28 11:01:06 查询 select * from user
+2016-02-28 11:01:06 获取全部记录 select * from user
+2016-02-28 11:01:06 释放结果集
+2016-02-28 11:01:06 完成整个查询任务,所用时间为0.0021228790283203
+2016-02-28 11:10:33 查询 select * from level
+2016-02-28 11:10:33 获取全部记录 select * from level
+2016-02-28 11:10:33 释放结果集
+2016-02-28 11:10:33 完成整个查询任务,所用时间为1.0117089748383
+2016-02-28 11:10:52 查询 select * from level
+2016-02-28 11:10:52 获取全部记录 select * from level
+2016-02-28 11:10:52 释放结果集
+2016-02-28 11:10:52 完成整个查询任务,所用时间为0.0026390552520752
+2016-02-28 11:11:02 查询 select * from level
+2016-02-28 11:11:02 获取全部记录 select * from level
+2016-02-28 11:11:02 释放结果集
+2016-02-28 11:11:02 完成整个查询任务,所用时间为0.0027289390563965
+2016-02-28 11:11:10 查询 select * from level
+2016-02-28 11:11:10 获取全部记录 select * from level
+2016-02-28 11:11:10 释放结果集
+2016-02-28 11:11:10 完成整个查询任务,所用时间为0.0029020309448242
+2016-02-28 11:11:19 查询 select * from level
+2016-02-28 11:11:19 获取全部记录 select * from level
+2016-02-28 11:11:19 释放结果集
+2016-02-28 11:11:19 完成整个查询任务,所用时间为0.0027658939361572
+2016-02-28 11:11:32 查询 select * from level
+2016-02-28 11:11:32 获取全部记录 select * from level
+2016-02-28 11:11:32 释放结果集
+2016-02-28 11:11:32 完成整个查询任务,所用时间为0.002877950668335
+2016-02-28 21:15:17 查询 select * from level
+2016-02-28 21:15:17 获取全部记录 select * from level
+2016-02-28 21:15:17 释放结果集
+2016-02-28 21:15:17 完成整个查询任务,所用时间为1.0328340530396
+2016-02-28 21:17:45 查询 SELECT id,name FROM level
+2016-02-28 21:17:45 Query Error: SELECT id,name FROM level
+Unknown column 'name' in 'field list'
+2016-02-28 21:17:45 释放结果集
+2016-02-28 21:17:45 完成整个查询任务,所用时间为0.0017509460449219
+2016-02-28 21:18:04 查询 SELECT id,name FROM user
+2016-02-28 21:18:04 获取全部记录 SELECT id,name FROM user
+2016-02-28 21:18:04 释放结果集
+2016-02-28 21:18:04 完成整个查询任务,所用时间为0.0084590911865234
+2016-02-28 21:18:05 查询 SELECT id,name FROM user
+2016-02-28 21:18:05 获取全部记录 SELECT id,name FROM user
+2016-02-28 21:18:05 释放结果集
+2016-02-28 21:18:05 完成整个查询任务,所用时间为0.0017368793487549
+2016-02-28 21:18:32 查询 SELECT id,name FROM user
+2016-02-28 21:18:32 获取全部记录 SELECT id,name FROM user
+2016-02-28 21:18:32 释放结果集
+2016-02-28 21:18:32 完成整个查询任务,所用时间为0.0018069744110107
+2016-02-28 21:18:57 查询 SELECT `id`,`name` FROM user
+2016-02-28 21:18:57 获取全部记录 SELECT `id`,`name` FROM user
+2016-02-28 21:18:57 释放结果集
+2016-02-28 21:18:57 完成整个查询任务,所用时间为0.0016059875488281
+2016-02-28 21:20:06 查询 SELECT * FROM user
+2016-02-28 21:20:06 获取全部记录 SELECT * FROM user
+2016-02-28 21:20:06 释放结果集
+2016-02-28 21:20:06 完成整个查询任务,所用时间为0.0023910999298096
+2016-02-28 21:20:21 查询 SELECT * FROM user
+2016-02-28 21:20:21 获取全部记录 SELECT * FROM user
+2016-02-28 21:20:21 释放结果集
+2016-02-28 21:20:21 完成整个查询任务,所用时间为0.0018820762634277
+2016-02-28 21:20:35 查询 SELECT * FROM user
+2016-02-28 21:20:35 获取全部记录 SELECT * FROM user
+2016-02-28 21:20:35 释放结果集
+2016-02-28 21:20:35 完成整个查询任务,所用时间为0.0017509460449219
+2016-02-28 21:20:52 查询 select * from user
+2016-02-28 21:20:52 获取全部记录 select * from user
+2016-02-28 21:20:52 释放结果集
+2016-02-28 21:20:52 完成整个查询任务,所用时间为0.0018088817596436
+2016-02-28 21:20:53 查询 select * from user
+2016-02-28 21:20:53 获取全部记录 select * from user
+2016-02-28 21:20:53 释放结果集
+2016-02-28 21:20:53 完成整个查询任务,所用时间为0.002133846282959
+2016-02-28 21:21:01 查询 select * from level
+2016-02-28 21:21:01 获取全部记录 select * from level
+2016-02-28 21:21:01 释放结果集
+2016-02-28 21:21:01 完成整个查询任务,所用时间为0.0017077922821045
+2016-02-28 21:23:41 查询 select Id,name from user
+2016-02-28 21:23:41 获取全部记录 select Id,name from user
+2016-02-28 21:23:41 释放结果集
+2016-02-28 21:23:41 完成整个查询任务,所用时间为1.0139739513397
+2016-02-28 21:23:41 查询 select Id,name from user
+2016-02-28 21:23:41 获取全部记录 select Id,name from user
+2016-02-28 21:23:41 释放结果集
+2016-02-28 21:23:41 完成整个查询任务,所用时间为0.0018739700317383
+2016-02-28 21:29:17 查询 select Id,name from user
+2016-02-28 21:29:17 获取全部记录 select Id,name from user
+2016-02-28 21:29:17 释放结果集
+2016-02-28 21:29:17 完成整个查询任务,所用时间为0.0039188861846924
+2016-02-28 21:29:55 查询 select Id form user where name=huazaierliand password=12345678
+2016-02-28 21:29:55 Query Error: select Id form user where name=huazaierliand password=12345678
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user where name=huazaierliand password=12345678' at line 1
+2016-02-28 21:29:55 释放结果集
+2016-02-28 21:29:55 完成整个查询任务,所用时间为0.0014479160308838
+2016-02-28 21:30:14 查询 select Id form user where name=huazaierli and password=12345678
+2016-02-28 21:30:14 Query Error: select Id form user where name=huazaierli and password=12345678
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user where name=huazaierli and password=12345678' at line 1
+2016-02-28 21:30:14 释放结果集
+2016-02-28 21:30:14 完成整个查询任务,所用时间为1.0113708972931
+2016-02-28 21:30:58 查询 select Id form user where name=huazaierli and password=12345678
+2016-02-28 21:30:58 Query Error: select Id form user where name=huazaierli and password=12345678
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user where name=huazaierli and password=12345678' at line 1
+2016-02-28 21:30:58 释放结果集
+2016-02-28 21:30:58 完成整个查询任务,所用时间为0.0020480155944824
+2016-02-28 21:31:52 查询 select Id form user, where name=huazaierli and password=12345678
+2016-02-28 21:31:52 Query Error: select Id form user, where name=huazaierli and password=12345678
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user, where name=huazaierli and password=12345678' at line 1
+2016-02-28 21:31:52 释放结果集
+2016-02-28 21:31:52 完成整个查询任务,所用时间为0.0020751953125
+2016-02-28 21:32:09 查询 select Id form user where name=huazaierli
+2016-02-28 21:32:09 Query Error: select Id form user where name=huazaierli
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user where name=huazaierli' at line 1
+2016-02-28 21:32:09 释放结果集
+2016-02-28 21:32:09 完成整个查询任务,所用时间为0.0014188289642334
+2016-02-28 21:32:10 查询 select Id form user where name=huazaierli
+2016-02-28 21:32:10 Query Error: select Id form user where name=huazaierli
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user where name=huazaierli' at line 1
+2016-02-28 21:32:10 释放结果集
+2016-02-28 21:32:10 完成整个查询任务,所用时间为0.0014641284942627
+2016-02-28 21:32:29 查询 select Id form user where name="huazaierli"
+2016-02-28 21:32:29 Query Error: select Id form user where name="huazaierli"
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user where name="huazaierli"' at line 1
+2016-02-28 21:32:29 释放结果集
+2016-02-28 21:32:29 完成整个查询任务,所用时间为0.0024218559265137
+2016-02-28 21:33:46 查询 select Id form user where name=huazaierli
+2016-02-28 21:33:46 Query Error: select Id form user where name=huazaierli
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user where name=huazaierli' at line 1
+2016-02-28 21:33:46 释放结果集
+2016-02-28 21:33:46 完成整个查询任务,所用时间为0.0014290809631348
+2016-02-28 21:34:02 查询 select Id form user
+2016-02-28 21:34:02 Query Error: select Id form user
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user' at line 1
+2016-02-28 21:34:02 释放结果集
+2016-02-28 21:34:02 完成整个查询任务,所用时间为0.0019822120666504
+2016-02-28 21:34:03 查询 select Id form user
+2016-02-28 21:34:03 Query Error: select Id form user
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user' at line 1
+2016-02-28 21:34:03 释放结果集
+2016-02-28 21:34:03 完成整个查询任务,所用时间为0.0019080638885498
+2016-02-28 21:34:24 查询 select name form user
+2016-02-28 21:34:24 Query Error: select name form user
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user' at line 1
+2016-02-28 21:34:24 释放结果集
+2016-02-28 21:34:24 完成整个查询任务,所用时间为0.0020561218261719
+2016-02-28 21:34:25 查询 select name form user
+2016-02-28 21:34:25 Query Error: select name form user
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user' at line 1
+2016-02-28 21:34:25 释放结果集
+2016-02-28 21:34:25 完成整个查询任务,所用时间为0.0014519691467285
+2016-02-28 21:34:42 查询 select name form user
+2016-02-28 21:34:42 Query Error: select name form user
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user' at line 1
+2016-02-28 21:34:42 释放结果集
+2016-02-28 21:34:42 完成整个查询任务,所用时间为0.001568078994751
+2016-02-28 21:37:38 查询 select Id,name from user
+2016-02-28 21:37:38 获取全部记录 select Id,name from user
+2016-02-28 21:37:38 释放结果集
+2016-02-28 21:37:38 完成整个查询任务,所用时间为0.0018908977508545
+2016-02-28 21:37:47 查询 select Id from user
+2016-02-28 21:37:47 获取全部记录 select Id from user
+2016-02-28 21:37:47 释放结果集
+2016-02-28 21:37:47 完成整个查询任务,所用时间为0.0018410682678223
+2016-02-28 21:37:48 查询 select Id from user
+2016-02-28 21:37:48 获取全部记录 select Id from user
+2016-02-28 21:37:48 释放结果集
+2016-02-28 21:37:48 完成整个查询任务,所用时间为0.0014891624450684
+2016-02-28 21:37:48 查询 select Id from user
+2016-02-28 21:37:48 获取全部记录 select Id from user
+2016-02-28 21:37:48 释放结果集
+2016-02-28 21:37:48 完成整个查询任务,所用时间为0.0016360282897949
+2016-02-28 21:38:18 查询 select Id from user where mame=huazaierli
+2016-02-28 21:38:18 Query Error: select Id from user where mame=huazaierli
+Unknown column 'mame' in 'where clause'
+2016-02-28 21:38:18 释放结果集
+2016-02-28 21:38:18 完成整个查询任务,所用时间为1.0109949111938
+2016-02-28 21:38:19 查询 select Id from user where mame=huazaierli
+2016-02-28 21:38:19 Query Error: select Id from user where mame=huazaierli
+Unknown column 'mame' in 'where clause'
+2016-02-28 21:38:19 释放结果集
+2016-02-28 21:38:19 完成整个查询任务,所用时间为0.0015408992767334
+2016-02-28 21:40:12 查询 select Id from user where name=huazaierli
+2016-02-28 21:40:12 Query Error: select Id from user where name=huazaierli
+Unknown column 'huazaierli' in 'where clause'
+2016-02-28 21:40:12 释放结果集
+2016-02-28 21:40:12 完成整个查询任务,所用时间为0.0017518997192383
+2016-02-28 21:40:21 查询 select Id from user where user.name=huazaierli
+2016-02-28 21:40:21 Query Error: select Id from user where user.name=huazaierli
+Unknown column 'huazaierli' in 'where clause'
+2016-02-28 21:40:21 释放结果集
+2016-02-28 21:40:21 完成整个查询任务,所用时间为0.0015628337860107
+2016-02-28 21:40:22 查询 select Id from user where user.name=huazaierli
+2016-02-28 21:40:22 Query Error: select Id from user where user.name=huazaierli
+Unknown column 'huazaierli' in 'where clause'
+2016-02-28 21:40:22 释放结果集
+2016-02-28 21:40:22 完成整个查询任务,所用时间为0.0018000602722168
+2016-02-28 21:41:28 查询 select Id from user where name="huazaierli"
+2016-02-28 21:41:28 获取全部记录 select Id from user where name="huazaierli"
+2016-02-28 21:41:28 释放结果集
+2016-02-28 21:41:28 完成整个查询任务,所用时间为0.00189208984375
+2016-02-28 21:44:48 查询 select Id from user where name="huazaierli"
+2016-02-28 21:44:48 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 21:44:48 释放结果集
+2016-02-28 21:44:48 完成整个查询任务,所用时间为1.0144758224487
+2016-02-28 21:44:58 查询 select Id from user where name="huazaierli"
+2016-02-28 21:44:58 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 21:44:58 释放结果集
+2016-02-28 21:44:58 完成整个查询任务,所用时间为0.0015699863433838
+2016-02-28 21:53:05 查询 select Id from user where name="huazaierli"
+2016-02-28 21:53:05 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 21:53:05 释放结果集
+2016-02-28 21:53:05 完成整个查询任务,所用时间为1.0083909034729
+2016-02-28 21:53:05 查询 select Id from user where name="huazaierli"
+2016-02-28 21:53:05 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 21:53:05 释放结果集
+2016-02-28 21:53:05 完成整个查询任务,所用时间为0.0015799999237061
+2016-02-28 21:53:29 查询 select Id from user where name="huazaierli"
+2016-02-28 21:53:29 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 21:53:29 释放结果集
+2016-02-28 21:53:29 完成整个查询任务,所用时间为0.0015721321105957
+2016-02-28 21:53:30 查询 select Id from user where name="huazaierli"
+2016-02-28 21:53:30 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 21:53:30 释放结果集
+2016-02-28 21:53:30 完成整个查询任务,所用时间为0.0017340183258057
+2016-02-28 21:56:43 查询 select Id from user where name="huazaierli"
+2016-02-28 21:56:43 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 21:56:43 释放结果集
+2016-02-28 21:56:43 完成整个查询任务,所用时间为0.054656982421875
+2016-02-28 21:57:18 查询 select Id from user where name="huazaierli"
+2016-02-28 21:57:18 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 21:57:18 释放结果集
+2016-02-28 21:57:18 完成整个查询任务,所用时间为0.0017139911651611
+2016-02-28 21:58:29 查询 select Id from user where name="huazaierli"
+2016-02-28 21:58:29 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 21:58:29 释放结果集
+2016-02-28 21:58:29 完成整个查询任务,所用时间为0.0022919178009033
+2016-02-28 22:00:55 查询 select Id,name from user
+2016-02-28 22:00:55 获取全部记录 select Id,name from user
+2016-02-28 22:00:56 释放结果集
+2016-02-28 22:00:56 完成整个查询任务,所用时间为1.1465239524841
+2016-02-28 22:01:27 查询 select Id,name from user
+2016-02-28 22:01:27 获取全部记录 select Id,name from user
+2016-02-28 22:01:27 释放结果集
+2016-02-28 22:01:27 完成整个查询任务,所用时间为0.0017709732055664
+2016-02-28 22:09:04 查询 select Id,name from user
+2016-02-28 22:09:04 获取全部记录 select Id,name from user
+2016-02-28 22:09:04 释放结果集
+2016-02-28 22:09:04 完成整个查询任务,所用时间为1.0103290081024
+2016-02-28 22:11:39 插入 insert into user(name,password) values('shijinhua','12345678')
+2016-02-28 22:11:39 查询 insert into user(name,password) values('shijinhua','12345678')
+2016-02-28 22:11:39 释放结果集
+2016-02-28 22:11:39 完成整个查询任务,所用时间为0.049365997314453
+2016-02-28 22:16:14 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:16:14')
+2016-02-28 22:16:14 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:16:14')
+2016-02-28 22:16:14 释放结果集
+2016-02-28 22:16:14 完成整个查询任务,所用时间为0.026396036148071
+2016-02-28 22:16:52 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:16:52')
+2016-02-28 22:16:52 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:16:52')
+2016-02-28 22:16:52 释放结果集
+2016-02-28 22:16:52 完成整个查询任务,所用时间为0.0018730163574219
+2016-02-28 22:18:01 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:01')
+2016-02-28 22:18:01 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:01')
+2016-02-28 22:18:01 释放结果集
+2016-02-28 22:18:01 完成整个查询任务,所用时间为1.0202810764313
+2016-02-28 22:18:01 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:01')
+2016-02-28 22:18:01 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:01')
+2016-02-28 22:18:01 释放结果集
+2016-02-28 22:18:01 完成整个查询任务,所用时间为0.0039689540863037
+2016-02-28 22:18:01 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:01')
+2016-02-28 22:18:01 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:01')
+2016-02-28 22:18:01 释放结果集
+2016-02-28 22:18:01 完成整个查询任务,所用时间为0.0031499862670898
+2016-02-28 22:18:01 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:01')
+2016-02-28 22:18:01 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:01')
+2016-02-28 22:18:01 释放结果集
+2016-02-28 22:18:01 完成整个查询任务,所用时间为0.0029788017272949
+2016-02-28 22:18:02 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:02')
+2016-02-28 22:18:02 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:02')
+2016-02-28 22:18:02 释放结果集
+2016-02-28 22:18:02 完成整个查询任务,所用时间为0.0015280246734619
+2016-02-28 22:18:02 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:02')
+2016-02-28 22:18:02 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:02')
+2016-02-28 22:18:02 释放结果集
+2016-02-28 22:18:02 完成整个查询任务,所用时间为0.0016119480133057
+2016-02-28 22:18:02 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:02')
+2016-02-28 22:18:02 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:02')
+2016-02-28 22:18:02 释放结果集
+2016-02-28 22:18:02 完成整个查询任务,所用时间为0.0019760131835938
+2016-02-28 22:18:02 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:02')
+2016-02-28 22:18:02 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:02')
+2016-02-28 22:18:02 释放结果集
+2016-02-28 22:18:02 完成整个查询任务,所用时间为0.0014989376068115
+2016-02-28 22:18:03 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:03')
+2016-02-28 22:18:03 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:03')
+2016-02-28 22:18:03 释放结果集
+2016-02-28 22:18:03 完成整个查询任务,所用时间为0.0016729831695557
+2016-02-28 22:18:03 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:03')
+2016-02-28 22:18:03 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:03')
+2016-02-28 22:18:03 释放结果集
+2016-02-28 22:18:03 完成整个查询任务,所用时间为0.00154709815979
+2016-02-28 22:18:03 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:03')
+2016-02-28 22:18:03 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:03')
+2016-02-28 22:18:03 释放结果集
+2016-02-28 22:18:03 完成整个查询任务,所用时间为0.0018918514251709
+2016-02-28 22:18:03 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:03')
+2016-02-28 22:18:03 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:03')
+2016-02-28 22:18:03 释放结果集
+2016-02-28 22:18:03 完成整个查询任务,所用时间为0.0014939308166504
+2016-02-28 22:18:04 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:04')
+2016-02-28 22:18:04 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:04')
+2016-02-28 22:18:04 释放结果集
+2016-02-28 22:18:04 完成整个查询任务,所用时间为0.0019528865814209
+2016-02-28 22:18:04 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:04')
+2016-02-28 22:18:04 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:04')
+2016-02-28 22:18:04 释放结果集
+2016-02-28 22:18:04 完成整个查询任务,所用时间为0.0020089149475098
+2016-02-28 22:18:04 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:04')
+2016-02-28 22:18:04 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:04')
+2016-02-28 22:18:04 释放结果集
+2016-02-28 22:18:04 完成整个查询任务,所用时间为0.0018649101257324
+2016-02-28 22:18:05 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:05')
+2016-02-28 22:18:05 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:05')
+2016-02-28 22:18:05 释放结果集
+2016-02-28 22:18:05 完成整个查询任务,所用时间为0.002007007598877
+2016-02-28 22:18:05 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:05')
+2016-02-28 22:18:05 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:05')
+2016-02-28 22:18:05 释放结果集
+2016-02-28 22:18:05 完成整个查询任务,所用时间为0.0019900798797607
+2016-02-28 22:18:05 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:05')
+2016-02-28 22:18:05 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:05')
+2016-02-28 22:18:05 释放结果集
+2016-02-28 22:18:05 完成整个查询任务,所用时间为0.0014510154724121
+2016-02-28 22:18:06 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:06')
+2016-02-28 22:18:06 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:06')
+2016-02-28 22:18:06 释放结果集
+2016-02-28 22:18:06 完成整个查询任务,所用时间为0.001655101776123
+2016-02-28 22:18:06 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:06')
+2016-02-28 22:18:06 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:06')
+2016-02-28 22:18:06 释放结果集
+2016-02-28 22:18:06 完成整个查询任务,所用时间为0.0016679763793945
+2016-02-28 22:18:06 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:06')
+2016-02-28 22:18:06 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:06')
+2016-02-28 22:18:06 释放结果集
+2016-02-28 22:18:06 完成整个查询任务,所用时间为0.001629114151001
+2016-02-28 22:18:07 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:07')
+2016-02-28 22:18:07 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:07')
+2016-02-28 22:18:07 释放结果集
+2016-02-28 22:18:07 完成整个查询任务,所用时间为0.0017340183258057
+2016-02-28 22:18:07 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:07')
+2016-02-28 22:18:07 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:07')
+2016-02-28 22:18:07 释放结果集
+2016-02-28 22:18:07 完成整个查询任务,所用时间为0.0015039443969727
+2016-02-28 22:18:07 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:07')
+2016-02-28 22:18:07 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:07')
+2016-02-28 22:18:07 释放结果集
+2016-02-28 22:18:07 完成整个查询任务,所用时间为0.0022571086883545
+2016-02-28 22:18:08 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:08')
+2016-02-28 22:18:08 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:08')
+2016-02-28 22:18:08 释放结果集
+2016-02-28 22:18:08 完成整个查询任务,所用时间为0.0015630722045898
+2016-02-28 22:18:08 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:08')
+2016-02-28 22:18:08 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:08')
+2016-02-28 22:18:08 释放结果集
+2016-02-28 22:18:08 完成整个查询任务,所用时间为0.0024030208587646
+2016-02-28 22:18:08 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:08')
+2016-02-28 22:18:08 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:08')
+2016-02-28 22:18:08 释放结果集
+2016-02-28 22:18:08 完成整个查询任务,所用时间为0.0023670196533203
+2016-02-28 22:18:09 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:09')
+2016-02-28 22:18:09 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:09')
+2016-02-28 22:18:09 释放结果集
+2016-02-28 22:18:09 完成整个查询任务,所用时间为0.001474142074585
+2016-02-28 22:18:09 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:09')
+2016-02-28 22:18:09 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:09')
+2016-02-28 22:18:09 释放结果集
+2016-02-28 22:18:09 完成整个查询任务,所用时间为0.0021159648895264
+2016-02-28 22:18:09 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:09')
+2016-02-28 22:18:09 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:09')
+2016-02-28 22:18:09 释放结果集
+2016-02-28 22:18:09 完成整个查询任务,所用时间为0.0014760494232178
+2016-02-28 22:18:09 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:09')
+2016-02-28 22:18:09 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:09')
+2016-02-28 22:18:09 释放结果集
+2016-02-28 22:18:09 完成整个查询任务,所用时间为0.0023720264434814
+2016-02-28 22:18:10 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:10')
+2016-02-28 22:18:10 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:10')
+2016-02-28 22:18:10 释放结果集
+2016-02-28 22:18:10 完成整个查询任务,所用时间为0.0017390251159668
+2016-02-28 22:18:10 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:10')
+2016-02-28 22:18:10 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:10')
+2016-02-28 22:18:10 释放结果集
+2016-02-28 22:18:10 完成整个查询任务,所用时间为0.0014469623565674
+2016-02-28 22:18:10 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:10')
+2016-02-28 22:18:10 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:10')
+2016-02-28 22:18:10 释放结果集
+2016-02-28 22:18:10 完成整个查询任务,所用时间为0.002126932144165
+2016-02-28 22:18:10 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:10')
+2016-02-28 22:18:10 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:10')
+2016-02-28 22:18:10 释放结果集
+2016-02-28 22:18:10 完成整个查询任务,所用时间为0.0017538070678711
+2016-02-28 22:18:11 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:11')
+2016-02-28 22:18:11 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:11')
+2016-02-28 22:18:11 释放结果集
+2016-02-28 22:18:11 完成整个查询任务,所用时间为0.0016510486602783
+2016-02-28 22:18:11 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:11')
+2016-02-28 22:18:11 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:11')
+2016-02-28 22:18:11 释放结果集
+2016-02-28 22:18:11 完成整个查询任务,所用时间为0.0019159317016602
+2016-02-28 22:18:11 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:11')
+2016-02-28 22:18:11 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:11')
+2016-02-28 22:18:11 释放结果集
+2016-02-28 22:18:11 完成整个查询任务,所用时间为0.0016610622406006
+2016-02-28 22:18:11 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:11')
+2016-02-28 22:18:11 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:11')
+2016-02-28 22:18:11 释放结果集
+2016-02-28 22:18:11 完成整个查询任务,所用时间为0.0021789073944092
+2016-02-28 22:18:12 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:12')
+2016-02-28 22:18:12 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:12')
+2016-02-28 22:18:12 释放结果集
+2016-02-28 22:18:12 完成整个查询任务,所用时间为0.0016970634460449
+2016-02-28 22:18:12 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:12')
+2016-02-28 22:18:12 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:12')
+2016-02-28 22:18:12 释放结果集
+2016-02-28 22:18:12 完成整个查询任务,所用时间为0.0014660358428955
+2016-02-28 22:18:12 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:12')
+2016-02-28 22:18:12 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:12')
+2016-02-28 22:18:12 释放结果集
+2016-02-28 22:18:12 完成整个查询任务,所用时间为0.0015659332275391
+2016-02-28 22:18:12 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:12')
+2016-02-28 22:18:12 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:12')
+2016-02-28 22:18:12 释放结果集
+2016-02-28 22:18:12 完成整个查询任务,所用时间为0.0022158622741699
+2016-02-28 22:18:13 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:13')
+2016-02-28 22:18:13 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:13')
+2016-02-28 22:18:13 释放结果集
+2016-02-28 22:18:13 完成整个查询任务,所用时间为0.0021431446075439
+2016-02-28 22:18:13 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:13')
+2016-02-28 22:18:13 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:13')
+2016-02-28 22:18:13 释放结果集
+2016-02-28 22:18:13 完成整个查询任务,所用时间为0.0014660358428955
+2016-02-28 22:18:13 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:13')
+2016-02-28 22:18:13 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:13')
+2016-02-28 22:18:13 释放结果集
+2016-02-28 22:18:13 完成整个查询任务,所用时间为0.0015990734100342
+2016-02-28 22:18:13 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:13')
+2016-02-28 22:18:13 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:13')
+2016-02-28 22:18:13 释放结果集
+2016-02-28 22:18:13 完成整个查询任务,所用时间为0.0026140213012695
+2016-02-28 22:18:14 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:14')
+2016-02-28 22:18:14 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:14')
+2016-02-28 22:18:14 释放结果集
+2016-02-28 22:18:14 完成整个查询任务,所用时间为0.0019221305847168
+2016-02-28 22:18:14 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:14')
+2016-02-28 22:18:14 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:14')
+2016-02-28 22:18:14 释放结果集
+2016-02-28 22:18:14 完成整个查询任务,所用时间为0.0020620822906494
+2016-02-28 22:18:14 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:14')
+2016-02-28 22:18:14 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:14')
+2016-02-28 22:18:14 释放结果集
+2016-02-28 22:18:14 完成整个查询任务,所用时间为0.0017349720001221
+2016-02-28 22:18:14 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:14')
+2016-02-28 22:18:14 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:14')
+2016-02-28 22:18:14 释放结果集
+2016-02-28 22:18:14 完成整个查询任务,所用时间为0.0018699169158936
+2016-02-28 22:18:15 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:15')
+2016-02-28 22:18:15 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:15')
+2016-02-28 22:18:15 释放结果集
+2016-02-28 22:18:15 完成整个查询任务,所用时间为0.001446008682251
+2016-02-28 22:18:15 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:15')
+2016-02-28 22:18:15 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:15')
+2016-02-28 22:18:15 释放结果集
+2016-02-28 22:18:15 完成整个查询任务,所用时间为0.0014638900756836
+2016-02-28 22:18:15 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:15')
+2016-02-28 22:18:15 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:15')
+2016-02-28 22:18:15 释放结果集
+2016-02-28 22:18:15 完成整个查询任务,所用时间为0.0020980834960938
+2016-02-28 22:18:16 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:16')
+2016-02-28 22:18:16 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:16')
+2016-02-28 22:18:16 释放结果集
+2016-02-28 22:18:16 完成整个查询任务,所用时间为0.0015408992767334
+2016-02-28 22:18:16 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:16')
+2016-02-28 22:18:16 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:16')
+2016-02-28 22:18:16 释放结果集
+2016-02-28 22:18:16 完成整个查询任务,所用时间为0.0020079612731934
+2016-02-28 22:18:16 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:16')
+2016-02-28 22:18:16 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:16')
+2016-02-28 22:18:16 释放结果集
+2016-02-28 22:18:16 完成整个查询任务,所用时间为0.0015289783477783
+2016-02-28 22:18:16 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:16')
+2016-02-28 22:18:16 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:16')
+2016-02-28 22:18:16 释放结果集
+2016-02-28 22:18:16 完成整个查询任务,所用时间为0.0014898777008057
+2016-02-28 22:18:17 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:17')
+2016-02-28 22:18:17 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:17')
+2016-02-28 22:18:17 释放结果集
+2016-02-28 22:18:17 完成整个查询任务,所用时间为0.0015668869018555
+2016-02-28 22:18:17 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:17')
+2016-02-28 22:18:17 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:17')
+2016-02-28 22:18:17 释放结果集
+2016-02-28 22:18:17 完成整个查询任务,所用时间为0.00160813331604
+2016-02-28 22:18:17 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:17')
+2016-02-28 22:18:17 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:17')
+2016-02-28 22:18:17 释放结果集
+2016-02-28 22:18:17 完成整个查询任务,所用时间为0.0021500587463379
+2016-02-28 22:18:17 插入 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:17')
+2016-02-28 22:18:17 查询 insert into user(name,password,create_time) values('shijinhua','12345678','2016-02-28 22:18:17')
+2016-02-28 22:18:17 释放结果集
+2016-02-28 22:18:17 完成整个查询任务,所用时间为0.001939058303833
+2016-02-28 22:18:55 查询 select Id,name from user
+2016-02-28 22:18:55 获取全部记录 select Id,name from user
+2016-02-28 22:18:55 释放结果集
+2016-02-28 22:18:55 完成整个查询任务,所用时间为0.0020380020141602
+2016-02-28 22:22:48 查询 select Id from user where name="huazaierli"
+2016-02-28 22:22:48 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 22:22:48 释放结果集
+2016-02-28 22:22:48 完成整个查询任务,所用时间为0.0019471645355225
+2016-02-28 22:22:50 查询 select Id from user where name="huazaierli"
+2016-02-28 22:22:50 获取一条记录 select Id from user where name="huazaierli"
+2016-02-28 22:22:50 释放结果集
+2016-02-28 22:22:50 完成整个查询任务,所用时间为0.0014960765838623
+2016-02-28 22:23:07 查询 select Id,name from user
+2016-02-28 22:23:07 获取全部记录 select Id,name from user
+2016-02-28 22:23:07 释放结果集
+2016-02-28 22:23:07 完成整个查询任务,所用时间为0.0023097991943359
+2016-02-28 22:23:50 查询 select Id,name from user
+2016-02-28 22:23:50 获取全部记录 select Id,name from user
+2016-02-28 22:23:50 释放结果集
+2016-02-28 22:23:50 完成整个查询任务,所用时间为0.0021340847015381
+2016-02-28 22:23:51 查询 select Id,name from user
+2016-02-28 22:23:51 获取全部记录 select Id,name from user
+2016-02-28 22:23:51 释放结果集
+2016-02-28 22:23:51 完成整个查询任务,所用时间为0.0022010803222656
+2016-02-28 22:23:51 查询 select Id,name from user
+2016-02-28 22:23:51 获取全部记录 select Id,name from user
+2016-02-28 22:23:51 释放结果集
+2016-02-28 22:23:51 完成整个查询任务,所用时间为0.00211501121521
+2016-02-28 22:23:52 查询 select Id,name from user
+2016-02-28 22:23:52 获取全部记录 select Id,name from user
+2016-02-28 22:23:52 释放结果集
+2016-02-28 22:23:52 完成整个查询任务,所用时间为0.0025138854980469
+2016-02-28 22:23:52 查询 select Id,name from user
+2016-02-28 22:23:52 获取全部记录 select Id,name from user
+2016-02-28 22:23:52 释放结果集
+2016-02-28 22:23:52 完成整个查询任务,所用时间为0.0017468929290771
+2016-02-28 22:23:52 查询 select Id,name from user
+2016-02-28 22:23:52 获取全部记录 select Id,name from user
+2016-02-28 22:23:52 释放结果集
+2016-02-28 22:23:52 完成整个查询任务,所用时间为0.0016839504241943
+2016-02-28 22:24:26 查询 select Id,name from user
+2016-02-28 22:24:26 获取全部记录 select Id,name from user
+2016-02-28 22:24:26 释放结果集
+2016-02-28 22:24:26 完成整个查询任务,所用时间为0.0019321441650391
+2016-02-28 22:41:20 查询 select * from joke_comment
+2016-02-28 22:41:20 获取全部记录 select * from joke_comment
+2016-02-28 22:41:20 释放结果集
+2016-02-28 22:41:20 完成整个查询任务,所用时间为1.0109550952911
+2016-02-28 22:41:43 查询 select * from joke_comment
+2016-02-28 22:41:43 获取全部记录 select * from joke_comment
+2016-02-28 22:41:43 释放结果集
+2016-02-28 22:41:43 完成整个查询任务,所用时间为0.0015730857849121
+2016-02-28 22:41:44 查询 select * from joke_comment
+2016-02-28 22:41:44 获取全部记录 select * from joke_comment
+2016-02-28 22:41:44 释放结果集
+2016-02-28 22:41:44 完成整个查询任务,所用时间为0.0016210079193115
+2016-02-28 22:41:44 查询 select * from joke_comment
+2016-02-28 22:41:44 获取全部记录 select * from joke_comment
+2016-02-28 22:41:44 释放结果集
+2016-02-28 22:41:44 完成整个查询任务,所用时间为0.0014140605926514
+2016-02-28 22:41:45 查询 select * from joke_comment
+2016-02-28 22:41:45 获取全部记录 select * from joke_comment
+2016-02-28 22:41:45 释放结果集
+2016-02-28 22:41:45 完成整个查询任务,所用时间为0.0014879703521729
+2016-02-28 22:42:53 查询 select * from joke_comment
+2016-02-28 22:42:53 获取全部记录 select * from joke_comment
+2016-02-28 22:42:53 释放结果集
+2016-02-28 22:42:53 完成整个查询任务,所用时间为0.001615047454834
+2016-02-28 22:43:22 查询 select * from joke_comment where id=1
+2016-02-28 22:43:22 获取全部记录 select * from joke_comment where id=1
+2016-02-28 22:43:22 释放结果集
+2016-02-28 22:43:22 完成整个查询任务,所用时间为0.0016460418701172
+2016-02-28 22:43:44 查询 select * from joke_comment where id=1
+2016-02-28 22:43:44 获取全部记录 select * from joke_comment where id=1
+2016-02-28 22:43:44 释放结果集
+2016-02-28 22:43:44 完成整个查询任务,所用时间为0.0014879703521729
+2016-02-28 22:43:57 查询 select * from joke_comment where
+2016-02-28 22:43:57 Query Error: select * from joke_comment where
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2016-02-28 22:43:57 释放结果集
+2016-02-28 22:43:57 完成整个查询任务,所用时间为0.001366138458252
+2016-02-28 22:43:59 查询 select * from joke_comment where
+2016-02-28 22:43:59 Query Error: select * from joke_comment where
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+2016-02-28 22:43:59 释放结果集
+2016-02-28 22:43:59 完成整个查询任务,所用时间为0.0013830661773682
+2016-02-28 22:44:07 查询 select * from joke_comment
+2016-02-28 22:44:07 获取全部记录 select * from joke_comment
+2016-02-28 22:44:07 释放结果集
+2016-02-28 22:44:07 完成整个查询任务,所用时间为0.0017189979553223
+2016-02-28 22:44:32 查询 select * from joke_comment
+2016-02-28 22:44:32 获取全部记录 select * from joke_comment
+2016-02-28 22:44:32 释放结果集
+2016-02-28 22:44:32 完成整个查询任务,所用时间为0.0014638900756836
+2016-02-28 22:44:51 查询 select aaa from joke_comment
+2016-02-28 22:44:51 Query Error: select aaa from joke_comment
+Unknown column 'aaa' in 'field list'
+2016-02-28 22:44:51 释放结果集
+2016-02-28 22:44:51 完成整个查询任务,所用时间为0.0014579296112061
+2016-02-28 22:45:06 查询 select jpke_id from joke_comment
+2016-02-28 22:45:06 Query Error: select jpke_id from joke_comment
+Unknown column 'jpke_id' in 'field list'
+2016-02-28 22:45:06 释放结果集
+2016-02-28 22:45:06 完成整个查询任务,所用时间为0.001413106918335
+2016-02-28 22:45:07 查询 select jpke_id from joke_comment
+2016-02-28 22:45:07 Query Error: select jpke_id from joke_comment
+Unknown column 'jpke_id' in 'field list'
+2016-02-28 22:45:07 释放结果集
+2016-02-28 22:45:07 完成整个查询任务,所用时间为0.0013689994812012
+2016-02-28 22:45:17 查询 select joke_id from joke_comment
+2016-02-28 22:45:17 获取全部记录 select joke_id from joke_comment
+2016-02-28 22:45:17 释放结果集
+2016-02-28 22:45:17 完成整个查询任务,所用时间为0.0014290809631348
+2016-02-28 22:45:28 查询 select joke_id from joke_comment
+2016-02-28 22:45:28 获取全部记录 select joke_id from joke_comment
+2016-02-28 22:45:28 释放结果集
+2016-02-28 22:45:28 完成整个查询任务,所用时间为0.0016770362854004

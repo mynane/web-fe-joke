@@ -1,0 +1,332 @@
+{
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-crumbs-arrow.png": {
+        "width": 10,
+        "height": 18,
+        "x": 154,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-btn-next-disable.png": {
+        "width": 12,
+        "height": 20,
+        "x": 86,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-btn-next-hover.png": {
+        "width": 12,
+        "height": 20,
+        "x": 86,
+        "y": 10
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-btn-next.png": {
+        "width": 12,
+        "height": 20,
+        "x": 86,
+        "y": 20
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-btn-prev-disable.png": {
+        "width": 12,
+        "height": 20,
+        "x": 86,
+        "y": 30
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-btn-prev-hover.png": {
+        "width": 12,
+        "height": 20,
+        "x": 86,
+        "y": 40
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-btn-prev.png": {
+        "width": 12,
+        "height": 20,
+        "x": 86,
+        "y": 50
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-asc.png": {
+        "width": 14,
+        "height": 20,
+        "x": 79,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-desc.png": {
+        "width": 14,
+        "height": 20,
+        "x": 79,
+        "y": 10
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-normal-m.png": {
+        "width": 14,
+        "height": 14,
+        "x": 79,
+        "y": 20
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-remind.png": {
+        "width": 14,
+        "height": 14,
+        "x": 79,
+        "y": 27
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-add-quick.png": {
+        "width": 18,
+        "height": 18,
+        "x": 19,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-arrow-down-hover.png": {
+        "width": 20,
+        "height": 22,
+        "x": 54,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-arrow-down.png": {
+        "width": 20,
+        "height": 22,
+        "x": 54,
+        "y": 11
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-arrow-downward-hover.png": {
+        "width": 20,
+        "height": 10,
+        "x": 54,
+        "y": 22
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-arrow-downward.png": {
+        "width": 20,
+        "height": 10,
+        "x": 54,
+        "y": 27
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-arrow-up-hover.png": {
+        "width": 20,
+        "height": 22,
+        "x": 54,
+        "y": 32
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-arrow-up.png": {
+        "width": 20,
+        "height": 22,
+        "x": 54,
+        "y": 43
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-arrow-upward-hover.png": {
+        "width": 20,
+        "height": 10,
+        "x": 54,
+        "y": 54
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-arrow-upward.png": {
+        "width": 20,
+        "height": 10,
+        "x": 54,
+        "y": 59
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-cross-del-deepcolor.png": {
+        "width": 20,
+        "height": 20,
+        "x": 54,
+        "y": 64
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-cross-del.png": {
+        "width": 20,
+        "height": 20,
+        "x": 54,
+        "y": 74
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-add.png": {
+        "width": 24,
+        "height": 24,
+        "x": 28,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-circle.png": {
+        "width": 26,
+        "height": 22,
+        "x": 92,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-alarm.png": {
+        "width": 28,
+        "height": 28,
+        "x": 40,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-reflash-hover.png": {
+        "width": 29,
+        "height": 30,
+        "x": 275,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-reflash.png": {
+        "width": 29,
+        "height": 30,
+        "x": 275,
+        "y": 15
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-arrow-left-hover.png": {
+        "width": 30,
+        "height": 28,
+        "x": 64,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-arrow-left.png": {
+        "width": 30,
+        "height": 28,
+        "x": 64,
+        "y": 14
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-commpic-help.png": {
+        "width": 30,
+        "height": 30,
+        "x": 64,
+        "y": 28
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-modico16-memo.png": {
+        "width": 32,
+        "height": 32,
+        "x": 259,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-modico16-plan.png": {
+        "width": 32,
+        "height": 32,
+        "x": 259,
+        "y": 16
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-aboutme-hover.png": {
+        "width": 38,
+        "height": 34,
+        "x": 0,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-aboutme.png": {
+        "width": 38,
+        "height": 34,
+        "x": 0,
+        "y": 17
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-allcalendar-hover.png": {
+        "width": 38,
+        "height": 34,
+        "x": 0,
+        "y": 34
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-allcalendar.png": {
+        "width": 38,
+        "height": 34,
+        "x": 0,
+        "y": 51
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-setting-hover.png": {
+        "width": 38,
+        "height": 34,
+        "x": 0,
+        "y": 68
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-setting.png": {
+        "width": 38,
+        "height": 34,
+        "x": 0,
+        "y": 85
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-today.png": {
+        "width": 40,
+        "height": 40,
+        "x": 318,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-close.png": {
+        "width": 48,
+        "height": 48,
+        "x": 130,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-modico-memo.png": {
+        "width": 48,
+        "height": 48,
+        "x": 130,
+        "y": 24
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-modico-plan.png": {
+        "width": 48,
+        "height": 48,
+        "x": 130,
+        "y": 48
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-smc-next-hover.png": {
+        "width": 48,
+        "height": 52,
+        "x": 130,
+        "y": 72
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-smc-next.png": {
+        "width": 48,
+        "height": 52,
+        "x": 130,
+        "y": 98
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-smc-prev-hover.png": {
+        "width": 48,
+        "height": 52,
+        "x": 130,
+        "y": 124
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-smc-prev.png": {
+        "width": 48,
+        "height": 52,
+        "x": 130,
+        "y": 150
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-close-hover.png": {
+        "width": 49,
+        "height": 48,
+        "x": 105,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-switch-close.png": {
+        "width": 56,
+        "height": 32,
+        "x": 290,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-switch-open-hidden.png": {
+        "width": 56,
+        "height": 32,
+        "x": 290,
+        "y": 16
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-switch-open.png": {
+        "width": 56,
+        "height": 32,
+        "x": 290,
+        "y": 32
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-dc-next-hover.png": {
+        "width": 60,
+        "height": 56,
+        "x": 159,
+        "y": 0
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-dc-next.png": {
+        "width": 60,
+        "height": 56,
+        "x": 159,
+        "y": 28
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-dc-prev-hover.png": {
+        "width": 60,
+        "height": 56,
+        "x": 159,
+        "y": 56
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-dc-prev.png": {
+        "width": 60,
+        "height": 56,
+        "x": 159,
+        "y": 84
+    },
+    "d:\\phpStudy\\WWW\\web-calendar-fe\\static\\dest\\imgs\\1x\\icon-calendar-list-empty.png": {
+        "width": 140,
+        "height": 126,
+        "x": 189,
+        "y": 0
+    }
+}

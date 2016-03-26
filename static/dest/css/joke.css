@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/**
+ *     公共less方法
+ */
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0; }
+
+.clearfix:after {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+html {
+  background-color: #edeff0;
+  overflow-y: auto;
+  height: 100%; }
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, table, th, td, embed, object {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Helvetica", "Tahoma", "Microsoft Yahei", "微软雅黑", "Simsun", "宋体";
+  background-color: #eee;
+  height: 100%; }
+
+label {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+a {
+  text-decoration: none;
+  color: #616366;
+  cursor: pointer;
+  outline: none; }
+
+a:hover {
+  color: #2299ee; }
+
+em {
+  font-style: normal; }
+
+ul {
+  margin: 0; }
+
+ul li {
+  list-style-type: none; }
+
+i {
+  background-image: url("../css/img/jingoalTaskIcon1x.png");
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+input {
+  outline: none; }
+
+input::-ms-clear {
+  display: none; }
+
+.wrap {
+  width: 960px;
+  height: 40px;
+  background-color: transparent;
+  margin: 0 auto; }
+
+.joke_header {
+  background-color: #282828;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; }
+  .joke_header .logo {
+    float: left; }
+    .joke_header .logo h3 {
+      width: 60px;
+      height: 40px; }
+  .joke_header .header_list {
+    float: left; }
+    .joke_header .header_list ul.clearfix li {
+      float: left;
+      margin-right: 10px; }
+      .joke_header .header_list ul.clearfix li a {
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        color: #999; }
+        .joke_header .header_list ul.clearfix li a:hover {
+          color: #fff; }
+        .joke_header .header_list ul.clearfix li a.current {
+          color: #fff;
+          height: 38px;
+          line-height: 40px;
+          border-bottom: 2px solid #29e; }
+  .joke_header .user_message {
+    float: right;
+    line-height: 40px;
+    color: #999; }
+    .joke_header .user_message a {
+      color: #999; }
+      .joke_header .user_message a:hover {
+        color: #fff; }
+  .joke_header .user_message span.split {
+    margin: 0 4px; }
+  .joke_header .user_message i.icon-message {
+    margin-right: 4px; }
+  .joke_header .user_message .user-name:hover i.icon-select {
+    background-position: -32px -96px; }
+  .joke_header .user_message .new-message:hover i.icon-message {
+    background-position: -144px -15px; }
+
+.joke_body {
+  margin-top: 46px;
+  overflow: hidden; }
+  .joke_body .wrap {
+    height: 100%; }
+    .joke_body .wrap .shadow {
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+      border: 1px solid #ccc \9;
+      background-color: #fff; }
+    .joke_body .wrap .body-left {
+      float: left;
+      width: 720px;
+      margin-right: 6px;
+      overflow: hidden; }
+      .joke_body .wrap .body-left .box {
+        float: left;
+        width: 200px; }
+        .joke_body .wrap .body-left .box .user-title {
+          text-align: center;
+          padding: 15px 0; }
+          .joke_body .wrap .body-left .box .user-title span {
+            font-weight: bold;
+            font-size: 12px;
+            margin-right: 6px; }
+        .joke_body .wrap .body-left .box .user-focus {
+          padding: 15px 0;
+          border-top: 1px solid #eee; }
+          .joke_body .wrap .body-left .box .user-focus h4 {
+            color: #949799;
+            font-weight: normal;
+            font-size: 12px; }
+          .joke_body .wrap .body-left .box .user-focus .left {
+            width: 50%;
+            text-align: center; }
+          .joke_body .wrap .body-left .box .user-focus .right {
+            width: 50%;
+            text-align: center; }
+      .joke_body .wrap .body-left .mian_content {
+        float: right;
+        width: 512px; }
+        .joke_body .wrap .body-left .mian_content .container {
+          margin-bottom: 7px; }
+        .joke_body .wrap .body-left .mian_content .joke-title {
+          font-size: 12px;
+          padding: 4px 10px 0 10px; }
+          .joke_body .wrap .body-left .mian_content .joke-title h3 {
+            font-weight: normal; }
+          .joke_body .wrap .body-left .mian_content .joke-title .upload-message {
+            color: #949799;
+            font-size: 10px;
+            margin-left: 10px; }
+        .joke_body .wrap .body-left .mian_content .joke-content {
+          padding: 4px 20px;
+          font-size: 12px;
+          color: #333; }
+        .joke_body .wrap .body-left .mian_content .joke-footer {
+          font-size: 12px;
+          color: #949799;
+          border-top: 1px solid #eee;
+          padding: 8px 20px; }
+          .joke_body .wrap .body-left .mian_content .joke-footer em {
+            margin-left: 6px; }
+          .joke_body .wrap .body-left .mian_content .joke-footer .love {
+            margin-right: 10px;
+            cursor: pointer; }
+            .joke_body .wrap .body-left .mian_content .joke-footer .love:hover {
+              color: #666; }
+              .joke_body .wrap .body-left .mian_content .joke-footer .love:hover i.icon-up {
+                background-position: 0px -16px; }
+          .joke_body .wrap .body-left .mian_content .joke-footer .comment {
+            cursor: pointer; }
+            .joke_body .wrap .body-left .mian_content .joke-footer .comment:hover {
+              color: #666; }
+              .joke_body .wrap .body-left .mian_content .joke-footer .comment:hover i.icon-comment {
+                background-position: -16px -16px; }
+    .joke_body .wrap .body-right {
+      float: right;
+      width: 232px;
+      overflow: hidden;
+      position: fixed;
+      top: 46px;
+      left: 912px;
+      font-size: 12px;
+      min-height: 170px; }
+      .joke_body .wrap .body-right .recommend {
+        border-bottom: 1px solid #eee;
+        padding: 10px 16px; }
+        .joke_body .wrap .body-right .recommend .right {
+          color: #949799;
+          cursor: pointer; }
+          .joke_body .wrap .body-right .recommend .right i.icon-refresh {
+            vertical-align: middle; }
+          .joke_body .wrap .body-right .recommend .right:hover {
+            color: #333; }
+            .joke_body .wrap .body-right .recommend .right:hover i.icon-refresh {
+              background-position: -16px -96px; }
+      .joke_body .wrap .body-right .person-content {
+        padding: 10px 16px; }
+        .joke_body .wrap .body-right .person-content ul li {
+          line-height: 24px;
+          cursor: pointer; }
+          .joke_body .wrap .body-right .person-content ul li:hover span.name {
+            color: #666; }
+          .joke_body .wrap .body-right .person-content ul li i {
+            margin-right: 4px; }
+          .joke_body .wrap .body-right .person-content ul li .right {
+            font-size: 10px;
+            color: #949799; }
+
+/*# sourceMappingURL=joke.css.map */

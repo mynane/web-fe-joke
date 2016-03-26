@@ -1,0 +1,20 @@
+// @import 'utils/_variable.scss';
+// @import 'utils/_mixins.scss';
+
+@import 'base/_base.scss';
+
+// @import 'components/_icon.scss';
+// @import 'components/_btn.scss';
+// @import 'components/_empty.scss';
+// @import 'components/_event-detail-popup.scss';
+// @import 'layout/_frame.scss';
+// @import 'layout/_sidebar.scss';
+
+// // 每个界面单独的样式
+@import 'pages/_main.scss';
+// @import 'pages/_monthView.scss';
+// @import 'pages/_setting.scss';
+// @import 'pages/_event_tetail.scss';
+// @import 'pages/_plan_memo.scss';
+// @import 'pages/_join_person_select.scss';
+// @import 'pages/_new-event.scss';

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>月视图-台历UI/UE重构</title>
+    <link rel="stylesheet" type="text/css" href="../web-fe-common/style/dest/jingoal.css">
+    <link rel="stylesheet" type="text/css" href="../static/dest/css/calendar.css?v=10">
+    <script type="text/javascript" src="http://www.jingoal.com/refactor/static/js/jquery-1.8.3.min.js?v=201601071"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+	    <!-- 侧边栏导航 -->
+<div class="sidebar">
+    <!-- 快捷操作 -->
+    <div class="shortcut">
+        <div class="shortcut-btn"><i class="icon-calendar-add"></i>新建申请</div>
+    </div>
+    <!-- 左侧菜单 -->
+    <div class="nav-panel">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <!-- 鼠标移入的样式还没有正式写呢 -->
+                <a class="nav-item-hd cur" href="#"><i class="icon-calendar-triangle-down"><b></b></i><i class="icon-calendar-calendar"></i><span>全部台历全部台历全部台历全部台历</span></a>
+                <ul class="nav-content" style="height:93px;">
+                    <!-- 每个li的高度为31px -->
+                    <li><a href="#"><span>培训台历</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的日程的日程的日程</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的台历的日程的日程</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的会议</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的日程</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的台历</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的会议</span></a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-hd" href="#"><i class="icon-calendar-triangle-down"></i><i class="icon-calendar-my"></i><span>我的台历</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-hd" href="#"><i class="icon-calendar-triangle-down"></i><i class="icon-calendar-calendar-manage"></i><span>台历管理</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-hd" href="#"><i class="icon-calendar-triangle-down"></i><i class="icon-calendar-setting"></i><span>功能设置</span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- 左侧日历索引 -->
+
+    <div class="sm-calendar-box">
+	<table class="table table-condensed noborder day-table me-margin-bottom0">
+	    <thead>
+	        <tr class="sm-calender-hd">
+	            <th colspan="2" class="textright sm-calendar-prev-month">
+	                <i class="commpic-left ch"></i>
+	            </th>
+	            <th colspan="3" class="textcenter year-month">
+	                <div>2016年1月</div>
+	            </th>
+	            <th colspan="2" class="sm-calendar-next-month">
+	                <i class="commpic-right ch"></i>
+	            </th>
+	        </tr>
+	        <tr>
+	            <th class="week_item">一</th>
+	            <th class="week_item">二</th>
+	            <th class="week_item">三</th>
+	            <th class="week_item">四</th>
+	            <th class="week_item">五</th>
+	            <th class="week_item">六</th>
+	            <th class="week_item">日</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr>
+	            <td class="day_item prevmonth" data-date="2015/12/27"><a>27</a></td>
+	            <td class="day_item prevmonth" data-date="2015/12/28"><a>28</a></td>
+	            <td class="day_item prevmonth selected" data-date="2015/12/29"><a>29</a></td>
+	            <td class="day_item prevmonth" data-date="2015/12/30"><a>30</a></td>
+	            <td class="day_item prevmonth" data-date="2015/12/31"><a>31</a></td>
+	            <td class="day_item present" data-date="2016/1/1"><a>1</a></td>
+	            <td class="day_item present" data-date="2016/1/2"><a>2</a></td>
+	        </tr>
+	        <tr>
+	            <td class="day_item present" data-date="2016/1/3"><a>3</a></td>
+	            <td class="day_item present choose_day" data-date="2016/1/4"><a>4</a></td>
+	            <td class="day_item present" data-date="2016/1/5"><a>5</a></td>
+	            <td class="day_item present" data-date="2016/1/6"><a>6</a></td>
+	            <td class="day_item present" data-date="2016/1/7"><a>7</a></td>
+	            <td class="day_item present" data-date="2016/1/8"><a>8<i></i></a></td>
+	            <td class="day_item present" data-date="2016/1/9"><a>9</a></td>
+	        </tr>
+	        <tr>
+	            <td class="day_item present" data-date="2016/1/10"><a>10</a></td>
+	            <td class="day_item present" data-date="2016/1/11"><a>11</a></td>
+	            <td class="day_item present" data-date="2016/1/12"><a>12</a></td>
+	            <td class="day_item present" data-date="2016/1/13"><a>13</a></td>
+	            <td class="day_item present" data-date="2016/1/14"><a>14</a></td>
+	            <td class="day_item present" data-date="2016/1/15"><a>15</a></td>
+	            <td class="day_item present" data-date="2016/1/16"><a>16</a></td>
+	        </tr>
+	        <tr>
+	            <td class="day_item present" data-date="2016/1/17"><a>17</a></td>
+	            <td class="day_item present" data-date="2016/1/18"><a>18</a></td>
+	            <td class="day_item present" data-date="2016/1/19"><a>19</a></td>
+	            <td class="day_item present today" data-date="2016/1/20"><a>20<i></i></a></td>
+	            <td class="day_item present" data-date="2016/1/21"><a>21<i></i></a></td>
+	            <td class="day_item present" data-date="2016/1/22"><a>22</a></td>
+	            <td class="day_item present" data-date="2016/1/23"><a>23</a></td>
+	        </tr>
+	        <tr>
+	            <td class="day_item present" data-date="2016/1/24"><a>24</a></td>
+	            <td class="day_item prese nt" data-date="2016/1/25"><a>25</a></td>
+	            <td class="day_item present" data-date="2016/1/26"><a>26</a></td>
+	            <td class="day_item present" data-date="2016/1/27"><a>27</a></td>
+	            <td class="day_item present" data-date="2016/1/28"><a>28</a></td>
+	            <td class="day_item present" data-date="2016/1/29"><a>29</a></td>
+	            <td class="day_item present" data-date="2016/1/30"><a>30</a></td>
+	        </tr>
+	        <tr>
+	            <td class="day_item present" data-date="2016/1/31"><a>31</a></td>
+	            <td class="day_item nextmonth" data-date="2016/2/1"><a>1</a></td>
+	            <td class="day_item nextmonth" data-date="2016/2/2"><a>2</a></td>
+	            <td class="day_item nextmonth" data-date="2016/2/3"><a>3</a></td>
+	            <td class="day_item nextmonth" data-date="2016/2/4"><a>4</a></td>
+	            <td class="day_item nextmonth" data-date="2016/2/5"><a>5</a></td>
+	            <td class="day_item nextmonth" data-date="2016/2/6"><a>6</a></td>
+	        </tr>
+	    </tbody>
+	</table>
+	<p class="sm-calendar-quick-opers"><a href="#" class="sm-calendar-btn-today">今天</a></p>
+</div>
+
+</div>
+<!-- /左侧日历索引 -->
+
+	    <div class="main-panel">
+	    	<!-- 搜索 -->
+	    	<!-- <div class="search-box">
+    			<input type="text" class="search-input"><a href="#" class="search-btn">搜索</a>
+    		</div> -->
+	    	<!-- 面包屑导航，其与日期选择框的整体高度都为49px -->
+	    	<!-- <div class="crumb-wrap">
+	    		<div class="crumb"><a href="#">全部台历</a><span>></span><h1><a href="#">查看申请</a></h1></div>
+	    	</div> -->
+	    	<!-- 日期选择框 -->
+	    	<div class="calendar-select-box">
+	    		<div class="select-date-wrap">
+		    		<div class="calendar-select-date">
+		    			2015年7月22日 (星期六) 农历五月十六
+		    			<a href="#" class="btn-prev"></a>
+		    			<a href="#" class="btn-next"></a>
+		    		</div>
+	    		</div>
+	    		<a href="#" class="today-btn">今天</a>
+	    		<div class="format-options">
+	    			<a href="#" class="format-type">年</a><a href="#" class="format-type">月</a><a href="#" class="format-type active">日</a>
+	    		</div>
+	    	</div>
+	    	<!-- 事件，月视图 -->
+	    	<div class="month-view" id="vjs-view">
+	    		<div class="mv-container">
+    				<table class="mv-event-grid">
+    					<thead>
+    						<tr>
+		    					<td class="mv-dayname">周一</td>
+		    					<td class="mv-dayname">周二</td>
+		    					<td class="mv-dayname">周三</td>
+		    					<td class="mv-dayname">周四</td>
+		    					<td class="mv-dayname">周五</td>
+		    					<td class="mv-dayname">周六</td>
+		    					<td class="mv-dayname sunday">周日</td>
+    						</tr>
+    					</thead>
+    					<!-- 需要js动态获取窗口的高度，计算每一行的高度同时设定出还有多少项 -->
+    					<tbody>
+    						<tr>
+		    					<td class="other-month">
+    								<div class="et-wrap">
+	    								<div class="et-box">
+		    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+				    						<div class="date-hd date-hd-rf"><span class="day-num">29</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+				    						<div class="date-bd">
+				    							<ul class="event-list">
+				    								<li class="et-item"><span class="et-time">9:00</span><span class="et-states"><i class="icon-calendar-notice"></i></span><div class="et-title">网络推广工作review网络推广工作review网络推广工作review网络推广工作review</div>
+				    								</li>
+				    								<li class="et-item"><span class="et-time">10:00</span><div class="et-title">未读消息重构分享</div></li>
+				    								<li class="et-item "><span class="et-time">10:00</span><div class="et-title">主线需求梳理</div></li>
+				    								<li class="et-item "><span class="et-time">10:00</span><div class="et-title">台历V2.1.0需求评审</div></li>
+				    								<li class="et-item "><span class="et-time">10:00</span><div class="et-title">台历V2.1.0需求评审</div></li>
+				    							</ul>
+				    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p>
+				    							<p class="et-act-more" title="点击展开所有">还有3项</p>
+				    						</div>
+				    					</div>
+			    					</div>
+		    					</td>
+    							<td class="other-month">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">30</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+
+		    					</div></td>
+    							<td class="focus">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">7月1日</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">2</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">3</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="weekend">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">4</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="sunday focus">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">5</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    						</tr>
+    					</tbody>
+    					<tbody>
+    						<tr>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">6</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<ul class="event-list">
+			    								<li class="et-item"><span class="et-time">9:00</span><div class="et-title">网络推广工作review网络推广工作review网络推广工作review网络推广工作review</div></li>
+			    								<li class="et-item"><span class="et-time">10:00</span><div class="et-title">未读消息重构分享</div></li>
+			    								<li class="et-item"><span class="et-time">10:00</span><div class="et-title">未读消息重构分享</div></li>
+			    								<li class="et-item"><span class="et-states"><i class="icon-calendar-notice"></i></span><span class="et-time">9:00</span><div class="et-title">台历V2.1.0需求评审</div></li>
+			    								<li class="et-item"><span class="et-time">10:00</span><div class="et-title">台历V2.1.0需求评审</div></li>
+			    								<li class="et-item"><span class="et-time">10:00</span><div class="et-title">啊实打实的</div></li>
+			    							</ul>
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">7</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">8</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">9</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">10</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="weekend">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">11</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="sunday">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">12</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    						</tr>
+    					</tbody>
+    					<tbody>
+    						<tr>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">13</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="showall">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">14</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<ul class="event-list">
+			    								<li class="et-item"><span class="et-time">9:00</span><div class="et-title">网络推广工作review网络推广工作review网络推广工作review网络推广工作review</div></li>
+			    								<li class="et-item"><span class="et-time">10:00</span><div class="et-title">未读消息重构分享</div></li>
+			    								<li class="et-item">
+			    									<span class="et-time">10:00</span>
+			    									<div class="et-title">主线需求梳理</div>
+			    								</li>
+			    								<li class="et-item"><span class="et-states"><i class="icon-calendar-notice"></i></span>
+			    									<span class="et-time">10:00</span>
+			    									<div class="et-title">台历V2.1.0需求评审</div>
+			    								</li>
+			    								<li class="et-item">
+			    									<span class="et-time">10:00</span>
+			    									<div class="et-title">台历V2.1.0需求评审</div>
+			    								</li>
+			    								<li class="et-item more"><span class="et-time">9:00</span><div class="et-title">网络推广工作review网络推广工作review网络推广工作review网络推广工作review</div></li>
+			    								<li class="et-item more"><span class="et-states"><i class="icon-calendar-notice"></i></span><span class="et-time">10:00</span><div class="et-title">未读消息重构分享</div></li>
+			    								<li class="et-item more">
+			    									<span class="et-time">10:00</span>
+			    									<div class="et-title">主线需求梳理</div>
+			    								</li>
+			    								<li class="et-item more">
+			    									<span class="et-time">10:00</span>
+			    									<div class="et-title">台历V2.1.0需求评审</div>
+			    								</li>
+			    								<li class="et-item more">
+			    									<span class="et-time">10:00</span>
+			    									<div class="et-title">台历V2.1.0需求评审</div>
+			    								</li>
+			    								<li class="et-item more"><span class="et-time">9:00</span><div class="et-title">网络推广工作review网络推广工作review网络推广工作review网络推广工作review</div></li>
+			    								<li class="et-item more"><span class="et-time">10:00</span><div class="et-title">未读消息重构分享</div></li>
+			    								<li class="et-item more">
+			    									<span class="et-time">10:00</span>
+			    									<div class="et-title">主线需求梳理</div>
+			    								</li>
+			    								<li class="et-item more">
+			    									<span class="et-time">10:00</span>
+			    									<div class="et-title">台历V2.1.0需求评审</div>
+			    								</li>
+			    								<li class="et-item more">
+			    									<span class="et-time">10:00</span>
+			    									<div class="et-title">台历V2.1.0需求评审</div>
+			    								</li>
+			    							</ul>
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">15</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="today">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">16</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<ul class="event-list">
+			    								<li class="et-item selected"><span class="et-time">9:00</span><div class="et-title">网络推广工作review网络推广工作review网络推广工作review网络推广工作review</div></li>
+			    								<li class="et-item"><span class="et-time">10:00</span><div class="et-title">未读消息重构分享</div></li>
+			    							</ul>
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">17</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="weekend">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">18</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="sunday">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">19</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    						</tr>
+    					</tbody>
+    					<tbody>
+    						<tr>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">20</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">21</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">22</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">23</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">24</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="weekend">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">25</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="sunday">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">26</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    						</tr>
+    					</tbody>
+    					<tbody>
+    						<tr>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">27</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">28</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">29</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">30</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td>
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">31</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="other-month weekend">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">8月1日</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    							<td class="other-month sunday">
+    								<!-- <div class="et-box-border"></div> -->
+    								<div class="et-wrap"><div class="et-box">
+	    								<!-- .date-hd{height:30px},.et-item{height:22px} -->
+			    						<div class="date-hd date-hd-rf"><span class="day-num">2</span><a class="zoom-switch" title="点击收起">&nbsp;</a></div>
+			    						<div class="date-bd">
+			    							
+			    							<p class="et-act-add"  title="点击添加事件"><i class="icon-calendar-add-quick"></i>快捷创建事件</p><p class="et-act-more" title="点击展开所有">还有3项</p>
+			    						</div>
+			    					</div>
+		    					</div></td>
+    						</tr>
+    					</tbody>
+    				</table>
+	    		</div>
+	    	</div>
+	    </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    	var everyday = $(".mv-event-grid td");
+    	everyday.click(function(){
+    		var cur = $(this);
+    		everyday.removeClass("focus").removeClass("showall");
+    		cur.addClass("focus");
+    	});
+    	$(".zoom-switch").click(function(){
+    		var td = $(this).parent("td");
+    		td.removeClass("showall");
+    	});
+    	
+    });
+
+    	// .day-view的最小高度要与.day-view-wrap的高度同时设置
+    	var clientHeight = document.body.clientHeight;
+    	// console.log(clientHeight);
+    	var a = document.getElementById("vjs-view");
+    	if (a) {
+    		a.style.height = (clientHeight - 98) + 'px';
+    	}
+    </script>
+</body>
+
+</html>

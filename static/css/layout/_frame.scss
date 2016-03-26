@@ -1,0 +1,201 @@
+@import 'utils/variable';
+html,
+body {
+    height: 100%;
+    overflow-y: hidden;
+}
+body{
+    min-width: 1020px;
+}
+.wrapper {
+    height: 100%;
+    overflow-x: hidden; // 为ie7准备的
+    .right-view,
+    .main-panel,
+    .month-view {
+        height: 100%;
+        overflow-y: auto;
+    }
+    .calendar-view-wrap {
+        overflow: hidden;
+        position: relative;
+        height: calc(100% - 49px);
+    }
+    .day-view-wrap {
+        height: 100%;
+        overflow-y: scroll;
+    }
+    // 侧边栏
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: $sidebar-width - 1;
+        height: 100%;
+        background-color: #f0f0f0;
+        border-right: 1px solid #c0c0c0;
+        z-index: $z_sidebar;
+        .left-small-calendar {
+            padding-top: 10px;
+        }
+    }
+    // 主要操作区域
+    .main-panel {
+        margin-left: $sidebar-width;
+    }
+    .crumb-wrap {
+        height: 48px;
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #d9d9d9;
+        overflow: hidden;
+        .crumb {
+            margin: 15px 0 0 20px;
+            color: #999;
+            font-size: 14px;
+            a {
+                color: #999;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            h1 {
+                display: inline-block;
+                font-weight: normal;
+                color: #1e1e1f;
+                a {
+                    color: #1e1e1f;
+                }
+            }
+
+            i {
+                margin: -2px 11px 0px 10px;
+                *margin: auto 10px;
+            }
+        }
+    }
+    .search-box {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+        // font-family: 'Microsoft Yahei';  // @Vicky temp
+        .search-input,
+        .search-btn {
+            height: 24px; // 总高度为26px,高度24px，border:1px; 
+            line-height: 24px;
+            border: 1px solid #c8cacc;
+            display: inline-block;
+            font-family: $ftf-song;
+        }
+        .search-input {
+            width: 230px;
+            padding: 0 8px;
+            border-bottom-left-radius: 2px;
+            border-top-left-radius: 2px;
+        }
+        .search-btn {
+            width: 44px;
+            text-align: center;
+            color: #616466;
+            background-color: #fff;
+            vertical-align: middle;
+            border-left: none;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+    }
+    .calendar-select-box {
+        position: relative;
+        height: 48px;
+        background-color: #fff;
+        border-bottom: 1px solid #d9d9d9;
+        text-align: center;
+        .today-btn {
+            transition: .3s;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            border: 1px solid #d7d8d9;
+            width: 54px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            background-color: #fcfcfc;
+            border-radius: 2px;
+            font-family: $ftf-song;
+            &:hover {
+                background-color: $c_highlight;
+                border-color: $c_highlight;
+                color: #fff;
+            }
+            &.disable {
+                background-color: #f2f2f2;
+                color: #b2b2b2;
+                border-color: #d7d8d9;
+            }
+        }
+    }
+    .format-options {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        .format-type {
+            display: inline-block;
+            font-size: 12px;
+            padding: 3px 0; // 总高度为28px,line-height:20px;
+            color: #666;
+            width: 69px;
+            text-align: center;
+            background-color: #fafafa;
+            border: 1px solid #d9d9d9;
+            line-height: 20px;
+            font-family: 'Microsoft Yahei';
+            position: relative;
+            z-index: 1;
+            &.active {
+                background-color: #7e8184;
+                color: #fff;
+                border-color: #7e8184;
+            }
+            &:focus,
+            &:hover {
+                z-index: 3;
+            }
+            &:first-child {
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+            }
+            &+.format-type {
+                margin-left: -1px;
+            }
+            &:last-child {
+                border-bottom-right-radius: 2px;
+                border-top-right-radius: 2px;
+            }
+        }
+    }
+    .calendar-select-date {
+        display: inline-block;
+        margin-top: 10px;
+        color: #333;
+        .icon-calendar-dc-prev,
+        .icon-calendar-dc-next,
+        .cur-date {
+            display: inline-block;
+            float: left;
+        }
+        .cur-date {
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: normal;
+            margin: 0 28px;
+        }
+        .icon-calendar-dc-prev,
+        .icon-calendar-dc-next {
+            cursor: pointer;
+            // transition: .3s;  // 雪碧图最后出来的效果不好，不如没有渐变的好 
+        }
+    }
+}

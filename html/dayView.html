@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<script type="text/javascript">var browser={};</script>
+<!--[if IE 7]>
+<html class="ie7 ie78">
+<script type="text/javascript">browser.ie7=true;browser.ie=true;browser.ie78=true;</script>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie8 ie78">
+<script type="text/javascript">browser.ie8=true;browser.ie=true;browser.ie78=true;</script>
+<![endif]-->
+<!--[if IE 9]>
+<html class="ie9">
+<script type="text/javascript">browser.ie9=true;browser.ie=true;</script>
+<![endif]-->
+<!--[if !IE]>
+<html>
+<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <title>月视图-台历UI/UE重构</title>
+    <link rel="stylesheet" type="text/css" href="../web-fe-common/style/dest/jingoal.css">
+    <link rel="stylesheet" type="text/css" href="../static/dest/css/calendar.css">
+</head>
+
+<body>
+    <div class="wrapper">
+	    <!-- 侧边栏导航 -->
+<div class="sidebar">
+    <!-- 快捷操作 -->
+    <div class="shortcut">
+        <div class="shortcut-btn"><i class="icon-calendar-add"></i>新建申请</div>
+    </div>
+    <!-- 左侧菜单 -->
+    <div class="nav-panel">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <!-- 鼠标移入的样式还没有正式写呢 -->
+                <a class="nav-item-hd cur" href="#"><i class="icon-calendar-triangle-down"><b></b></i><i class="icon-calendar-calendar"></i><span>全部台历全部台历全部台历全部台历</span></a>
+                <ul class="nav-content" style="height:93px;">
+                    <!-- 每个li的高度为31px -->
+                    <li><a href="#"><span>培训台历</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的日程的日程的日程</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的台历的日程的日程</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的会议</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的日程</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的台历</span></a></li>
+                    <li><a href="#"><span>Lee(李兴)的会议</span></a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-hd" href="#"><i class="icon-calendar-triangle-down"></i><i class="icon-calendar-my"></i><span>我的台历</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-hd" href="#"><i class="icon-calendar-triangle-down"></i><i class="icon-calendar-calendar-manage"></i><span>台历管理</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-hd" href="#"><i class="icon-calendar-triangle-down"></i><i class="icon-calendar-setting"></i><span>功能设置</span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- 左侧日历索引 -->
+    <div class="calendar-index">
+        <div class="calendar-month">
+            2015年5月<a href="#" class="btn-prev"><i class="ico-calendar-prev"></i></a><a href="#" class="btn-next"><i class="ico-calendar-next"></i></a>
+        </div>
+        <table class="calendar-table">
+            <tr>
+                <th>一</th>
+                <th>二</th>
+                <th>三</th>
+                <th>四</th>
+                <th>五</th>
+                <th>六</th>
+                <th>日</th>
+            </tr>
+            <tr>
+                <td class="other-month"><span>28</span><i></i></td>
+                <td class="other-month"><span>29</span></td>
+                <td class="other-month"><span>30</span></td>
+                <td class="other-month"><span>31</span></td>
+                <td><span>1</span></td>
+                <td class="state-impt"><span>2</span><i></i></td>
+                <td><span>3</span></td>
+            </tr>
+            <tr>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+            </tr>
+            <tr>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+            </tr>
+            <tr>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td class="selected"><span>21</span><i></i></td>
+                <td class="state-impt"><span>22</span><i></i></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+            </tr>
+            <tr>
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+            </tr>
+            </table>
+    </div>
+
+</div>
+<!-- /左侧日历索引 -->
+
+	    <div class="main-panel">
+	    	<!-- 搜索 -->
+	    	<div class="search-box">
+    			<input type="text" class="search-input"><a href="#" class="search-btn">搜索</a>
+    		</div>
+	    	<!-- 面包屑导航，其与日期选择框的整体高度都为49px -->
+	    	<div class="crumb-wrap">
+	    		<div class="crumb"><a href="#">全部台历</a><span>></span><h1><a href="#">查看申请</a></h1></div>
+	    	</div>
+	    	<!-- 日期选择框 -->
+	    	<div class="calendar-select-box">
+	    		<div class="select-date-wrap">
+		    		<div class="calendar-select-date">
+		    			2015年7月22日 (星期六) 农历五月十六
+		    			<a href="#" class="btn-prev"></a>
+		    			<a href="#" class="btn-next"></a>
+		    		</div>
+	    		</div>
+	    		<a href="#" class="today-btn">今天</a>
+	    		<div class="format-options">
+	    			<a href="#" class="format-type">年</a><a href="#" class="format-type">月</a><a href="#" class="format-type active">日</a>
+	    		</div>
+	    	</div>
+	    	<!-- 事件 -->
+	    	<div class="day-view-wrap">
+	    		<div class="day-view">
+	    			<div class="day-more">
+	    				<a class="day-more-before"><span>2016-1-20</span>之前的事件<i></i></a>
+	    			</div>
+	    			<div class="eventTable">
+					<div class="ettb-item">
+	    			<table class="event-table">
+	    				<colgroup>
+                    <col class="col-1">
+                    <col class="col-2">
+                    <col>
+                    <col class="col-4">
+                </colgroup>
+	    				<tbody class="today">
+	    					<tr><th colspan="4"><em class="date">2016年01月05日</em><span class="week">星期一<span>（十一）</span></span><b class="tody-phrase">（今天）</b><i class="state-remind"></i></th></tr>
+	    					<tr>
+	    						<td class="prompt-icons"><span><i class="icon-calendar-remind"></i></span><span><i class="icon-calendar-repeat"></i></span><span><i class="icon-calendar-alarm"></i></span>
+	    						</td>
+	    						<td class="time-period">10:00-10:30</td class="event-title">
+	    						<td>企业晨会</td>
+	    						<td class="event-user">Maggie(崔雅涵)</td>
+	    					</tr>
+	    					<tr>
+	    						<td class="prompt-icons">
+	    							<span><i class="icon-calendar-remind"></i></span>
+	    						</td>
+	    						<td class="time-period">10:00-10:30</td>
+	    						<td>总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会总经理办公例会</td>
+	    						<td class="event-user">Maggie(崔雅涵)</td>
+	    					</tr>
+	    					<tr>
+	    						<td class="prompt-icons"><span><i class="icon-calendar-alarm"></i></span>
+	    						</td>
+	    						<td class="time-period">10:00-10:30</td>
+	    						<td>客服部会议</td>
+	    						<td class="event-user">Victoria(崔雅涵)</td>
+	    					</tr>
+	    					<tr>
+	    						<td class="prompt-icons"></td>
+	    						<td class="time-period">10:00-10:30</td>
+	    						<td>客服部会议</td>
+	    						<td class="event-user">Victoria(崔雅涵)</td>
+	    					</tr>
+	    				</tbody>
+	    			</table>
+	    			</div>
+	    			<div class="ettb-item">
+		    			<table class="event-table">
+		    				<tbody>
+		    					<tr><th colspan="4"><em class="date">2016年01月06日</em><span class="week">星期一<span>（十一）</span></span><i class="state-remind"></i></th></tr>
+		    					<tr>
+		    						<td class="prompt-icons">
+		    							<span><i class="icon-calendar-repeat"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td class="event-title">企业晨会</td>
+		    						<td class="event-user">Maggie(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons">
+		    							<span><i class="icon-calendar-remind"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>总经理办公例会</td>
+		    						<td class="event-user">Maggie(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons"><span><i class="icon-calendar-alarm"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>客服部会议</td>
+		    						<td class="event-user">Victoria(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons"></td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>客服部会议</td>
+		    						<td class="event-user">Victoria(崔雅涵)</td>
+		    					</tr>
+		    				</tbody>
+		    			</table>
+	    			</div>
+	    			<div class="ettb-item">
+		    			<table class="event-table">
+		    				<tbody>
+		    					<tr><th colspan="4"><em class="date">2016年01月06日</em><span class="week">星期一<span>（十一）</span></span><i class="state-remind"></i></th></tr>
+		    					<tr>
+		    						<td class="prompt-icons">
+		    							<span><i class="icon-calendar-repeat"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td class="event-title">企业晨会 </td>
+		    						<td class="event-user">Maggie(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons">
+		    							<span><i class="icon-calendar-remind"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>总经理办公例会</td>
+		    						<td class="event-user">Maggie(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons"><span><i class="icon-calendar-alarm"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>客服部会议</td>
+		    						<td class="event-user">Victoria(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons"></td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>客服部会议</td>
+		    						<td class="event-user">Victoria(崔雅涵)</td>
+		    					</tr>
+		    				</tbody>
+		    			</table>
+	    			</div>
+	    			<div class="ettb-item">
+		    			<table class="event-table">
+		    				<tbody>
+		    					<tr><th colspan="4"><em class="date">2016年01月06日</em><span class="week">星期一<span>（十一）</span></span><i class="state-remind"></i></th></tr>
+		    					<tr>
+		    						<td class="prompt-icons">
+		    							<span><i class="icon-calendar-repeat"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td class="event-title"> 企业晨会</td>
+		    						<td class="event-user">Maggie(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons">
+		    							<span><i class="icon-calendar-remind"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>总经理办公例会</td>
+		    						<td class="event-user">Maggie(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons"><span><i class="icon-calendar-alarm"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>客服部会议</td>
+		    						<td class="event-user">Victoria(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons"></td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>客服部会议</td>
+		    						<td class="event-user">Victoria(崔雅涵)</td>
+		    					</tr>
+		    				</tbody>
+		    			</table>
+	    			</div>
+	    			<div class="ettb-item">
+		    			<table class="event-table">
+		    				<tbody>
+		    					<tr><th colspan="4"><em class="date">2016年01月06日</em><span class="week">星期一<span>（十一）</span></span><i class="state-remind"></i></th></tr>
+		    					<tr>
+		    						<td class="prompt-icons">
+		    							<span><i class="icon-calendar-repeat"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td class="event-title">企业晨会</td>
+		    						<td class="event-user">Maggie(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons">
+		    							<span><i class="icon-calendar-remind"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>总经理办公例会</td>
+		    						<td class="event-user">Maggie(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons"><span><i class="icon-calendar-alarm"></i></span>
+		    						</td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>客服部会议</td>
+		    						<td class="event-user">Victoria(崔雅涵)</td>
+		    					</tr>
+		    					<tr>
+		    						<td class="prompt-icons"></td>
+		    						<td class="time-period">10:00-10:30</td>
+		    						<td>客服部会议</td>
+		    						<td class="event-user">Victoria(崔雅涵)</td>
+		    					</tr>
+		    				</tbody>
+		    			</table>
+	    			</div>
+	    			</div>
+	    			<div class="day-more">
+	    				<a class="day-more-after ">2016-1-5 之后的事件<i></i></a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+    </div>
+    <!-- 编写静态页面时写的测试代码，请及时删除 -->
+    <script type="text/javascript">
+    	// .day-view的最小高度要与.day-view-wrap的高度同时设置
+    	var clientHeight = document.body.clientHeight;
+    	console.log(clientHeight);
+    	var a = document.getElementsByClassName("day-view-wrap");
+    	var c = document.getElementsByClassName("day-view");
+    	var b = a?a[0]:null;
+    	var d = c?c[0]:null;
+    	if (b) {
+    		b.style.height = (clientHeight - 98) + 'px';
+    	}
+    	if (d) {
+    		d.style.minHeight = (clientHeight - 98) + 'px';
+    	}
+    </script>
+</body>
+
+</html>
